@@ -1,6 +1,6 @@
 # 🚚 Scoop-Apeiraco
 
-> *收录那些官方仓库不会接纳的非主流软件*
+> _收录那些官方仓库不会接纳的非主流软件_
 
 精选主流 bucket 忽略的实用工具——开发者工具、极客利器、ACGN 应用等。
 
@@ -15,38 +15,39 @@
 
 ### 💻 开发者工具
 
-| 软件 | 描述 |
-|------|------|
-| **[fresh](https://github.com/sinelaw/fresh)** | 开箱即用的终端文本编辑器 |
-| **[ut](https://github.com/ksdme/ut)** | 快速轻量的 CLI 工具集 |
-| **[seaweedfs](https://github.com/seaweedfs/seaweedfs)** | 高性能分布式存储系统 |
-| **[minio (archive)](https://github.com/minio/minio)** | 高性能对象存储服务器（已归档版本，包含 WebUI 管理） |
-| **[minio-client (archive)](https://github.com/minio/mc)** | MinIO 对象存储命令行客户端（已归档版本） |
+| 软件                                                      | 描述                                                |
+| --------------------------------------------------------- | --------------------------------------------------- |
+| **[fresh](https://github.com/sinelaw/fresh)**             | 开箱即用的终端文本编辑器                            |
+| **[ut](https://github.com/ksdme/ut)**                     | 快速轻量的 CLI 工具集                               |
+| **[seaweedfs](https://github.com/seaweedfs/seaweedfs)**   | 高性能分布式存储系统                                |
+| **[minio (archive)](https://github.com/minio/minio)**     | 高性能对象存储服务器（已归档版本，包含 WebUI 管理） |
+| **[minio-client (archive)](https://github.com/minio/mc)** | MinIO 对象存储命令行客户端（已归档版本）            |
 
 ### 🔧 极客工具
 
-| 软件 | 描述 |
-|------|------|
-| **[Cheat Engine](https://cheatengine.org)** | 经典内存扫描器与游戏调试工具 |
-| **[Game-Cheats-Manager](https://github.com/dyang886/Game-Cheats-Manager)** | 游戏修改器下载管理器 |
-| **[Wemod-Patcher](https://github.com/k1tbyte/Wemod-Patcher)** | WeMod Pro 功能解锁补丁 |
-| **[Watt-Toolkit](https://github.com/BeyondDimension/SteamTools)** | Steam++ 开源多功能工具箱 |
-| **[ContextMenuManager](https://bluepointlilac.github.io/ContextMenuManager)** | Windows 右键菜单管理器 |
-| **[Dism++](https://github.com/Chuyu-Team/Dism-Multi-language)** | 强大的 Windows 系统精简优化工具 |
-| **[UEFIExtract](https://github.com/LongSoft/UEFITool)** | UEFI 固件镜像提取工具（命令行版） |
-| **[UEFIFind](https://github.com/LongSoft/UEFITool)** | UEFI 固件镜像查看与编辑工具（新引擎） |
+| 软件                                                                          | 描述                                  |
+| ----------------------------------------------------------------------------- | ------------------------------------- |
+| **[Cheat Engine](https://cheatengine.org)**                                   | 经典内存扫描器与游戏调试工具          |
+| **[Game-Cheats-Manager](https://github.com/dyang886/Game-Cheats-Manager)**    | 游戏修改器下载管理器                  |
+| **[Wemod-Patcher](https://github.com/k1tbyte/Wemod-Patcher)**                 | WeMod Pro 功能解锁补丁                |
+| **[Watt-Toolkit](https://github.com/BeyondDimension/SteamTools)**             | Steam++ 开源多功能工具箱              |
+| **[ContextMenuManager](https://bluepointlilac.github.io/ContextMenuManager)** | Windows 右键菜单管理器                |
+| **[Dism++](https://github.com/Chuyu-Team/Dism-Multi-language)**               | 强大的 Windows 系统精简优化工具       |
+| **[UEFIExtract](https://github.com/LongSoft/UEFITool)**                       | UEFI 固件镜像提取工具（命令行版）     |
+| **[UEFIFind](https://github.com/LongSoft/UEFITool)**                          | UEFI 固件镜像查看与编辑工具（新引擎） |
 
 ### 🎌 ACGN 工具
 
-| 软件 | 描述 |
-|------|------|
+| 软件                                                   | 描述                                 |
+| ------------------------------------------------------ | ------------------------------------ |
 | **[JHenTai](https://github.com/jiangtian616/JHenTai)** | E-Hentai / ExHentai 跨平台漫画阅读器 |
 
 ### 🤖 AI 工具
 
-| 软件 | 描述 |
-|------|------|
-| **[llama.cpp](https://github.com/ggml-org/llama.cpp)** | 纯 C/C++ 实现的 LLaMA 推理工具（cpu/cuda/hip/opencl/vulkan/sycl 变体） |
+| 软件                                                                                 | 描述                                                                   |
+| ------------------------------------------------------------------------------------ | ---------------------------------------------------------------------- |
+| **[llama.cpp](https://github.com/ggml-org/llama.cpp)**                               | 纯 C/C++ 实现的 LLaMA 推理工具（cpu/cuda/hip/opencl/vulkan/sycl 变体） |
+| **[Sakura-Launcher-GUI](https://github.com/PiDanShouRouZhouXD/Sakura_Launcher_GUI)** | SakuraLLM 的图形化启动器                                               |
 
 **说明：** 本仓库提供 `llama.cpp` 的多个变体清单（cpu/cuda/hip/opencl/vulkan/sycl）。上游官方发布目前没有 CUDA 13.1（cu131）版本，因此这里单独提供了 `llama.cpp-cu131` 包。
 
@@ -108,4 +109,3 @@ scoop update *
 [The Unlicense](LICENSE) - 公共领域
 
 **注意：** 本仓库中具体软件的许可证以上游仓库为准，请参考各软件原始项目的许可证声明。
-

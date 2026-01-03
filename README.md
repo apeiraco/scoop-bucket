@@ -1,6 +1,6 @@
 # 🚚 Scoop-Apeiraco
 
-> *A bucket of unconventional software that official repos won't carry.*
+> _A bucket of unconventional software that official repos won't carry._
 
 Curating practical tools that mainstream buckets overlook — developer utilities, geek essentials, ACGN apps, and more.
 
@@ -15,39 +15,40 @@ Curating practical tools that mainstream buckets overlook — developer utilitie
 
 ### 💻 Developer Tools
 
-| App | Description |
-|-----|-------------|
-| **[fresh](https://github.com/sinelaw/fresh)** | A terminal text editor you can just use |
-| **[ut](https://github.com/ksdme/ut)** | A fast, lightweight CLI utility toolkit |
-| **[seaweedfs](https://github.com/seaweedfs/seaweedfs)** | Fast distributed storage system for blobs, objects & files |
-| **[minio (archive)](https://github.com/minio/minio)** | High-performance object storage server (archived build with legacy WebUI) |
-| **[minio-client (archive)](https://github.com/minio/mc)** | Command-line client for MinIO object storage (archived) |
+| App                                                       | Description                                                               |
+| --------------------------------------------------------- | ------------------------------------------------------------------------- |
+| **[fresh](https://github.com/sinelaw/fresh)**             | A terminal text editor you can just use                                   |
+| **[ut](https://github.com/ksdme/ut)**                     | A fast, lightweight CLI utility toolkit                                   |
+| **[seaweedfs](https://github.com/seaweedfs/seaweedfs)**   | Fast distributed storage system for blobs, objects & files                |
+| **[minio (archive)](https://github.com/minio/minio)**     | High-performance object storage server (archived build with legacy WebUI) |
+| **[minio-client (archive)](https://github.com/minio/mc)** | Command-line client for MinIO object storage (archived)                   |
 
 ### 🔧 Geek Tools
 
-| App | Description |
-|-----|-------------|
-| **[Cheat Engine](https://cheatengine.org)** | Memory scanner & debugger for single-player games |
-| **[Game-Cheats-Manager](https://github.com/dyang886/Game-Cheats-Manager)** | Download and manage game trainers with ease |
-| **[Wemod-Patcher](https://github.com/k1tbyte/Wemod-Patcher)** | Unlock WeMod Pro features for free |
-| **[Watt-Toolkit](https://github.com/BeyondDimension/SteamTools)** | Open-source Steam multifunctional toolbox (Steam++) |
-| **[ContextMenuManager](https://bluepointlilac.github.io/ContextMenuManager)** | Manage Windows right-click context menus |
-| **[Dism++](https://github.com/Chuyu-Team/Dism-Multi-language)** | Powerful Windows system optimization & cleanup tool |
-| **[UEFIExtract](https://github.com/LongSoft/UEFITool)** | UEFI firmware image extractor (Command Line) |
-| **[UEFIFind](https://github.com/LongSoft/UEFITool)** | UEFI firmware image finder (Command Line) |
-| **[UEFITool](https://github.com/LongSoft/UEFITool)** | UEFI firmware image viewer and editor (New Engine) |
+| App                                                                           | Description                                         |
+| ----------------------------------------------------------------------------- | --------------------------------------------------- |
+| **[Cheat Engine](https://cheatengine.org)**                                   | Memory scanner & debugger for single-player games   |
+| **[Game-Cheats-Manager](https://github.com/dyang886/Game-Cheats-Manager)**    | Download and manage game trainers with ease         |
+| **[Wemod-Patcher](https://github.com/k1tbyte/Wemod-Patcher)**                 | Unlock WeMod Pro features for free                  |
+| **[Watt-Toolkit](https://github.com/BeyondDimension/SteamTools)**             | Open-source Steam multifunctional toolbox (Steam++) |
+| **[ContextMenuManager](https://bluepointlilac.github.io/ContextMenuManager)** | Manage Windows right-click context menus            |
+| **[Dism++](https://github.com/Chuyu-Team/Dism-Multi-language)**               | Powerful Windows system optimization & cleanup tool |
+| **[UEFIExtract](https://github.com/LongSoft/UEFITool)**                       | UEFI firmware image extractor (Command Line)        |
+| **[UEFIFind](https://github.com/LongSoft/UEFITool)**                          | UEFI firmware image finder (Command Line)           |
+| **[UEFITool](https://github.com/LongSoft/UEFITool)**                          | UEFI firmware image viewer and editor (New Engine)  |
 
 ### 🎌 ACGN Tools
 
-| App | Description |
-|-----|-------------|
+| App                                                    | Description                                         |
+| ------------------------------------------------------ | --------------------------------------------------- |
 | **[JHenTai](https://github.com/jiangtian616/JHenTai)** | Cross-platform manga reader for E-Hentai & ExHentai |
 
 ### 🤖 AI Tools
 
-| App | Description |
-|-----|-------------|
-| **[llama.cpp](https://github.com/ggml-org/llama.cpp)** | Inference of LLaMA model in pure C/C++ (cpu/cuda/hip/opencl/vulkan/sycl variants) |
+| App                                                                                  | Description                                                                       |
+| ------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------- |
+| **[llama.cpp](https://github.com/ggml-org/llama.cpp)**                               | Inference of LLaMA model in pure C/C++ (cpu/cuda/hip/opencl/vulkan/sycl variants) |
+| **[Sakura-Launcher-GUI](https://github.com/PiDanShouRouZhouXD/Sakura_Launcher_GUI)** | A GUI Launcher for Sakura LLM                                                     |
 
 **Note:** `llama.cpp` has multiple manifests here (cpu/cuda/hip/opencl/vulkan/sycl). Upstream official releases currently do not provide a CUDA 13.1 (cu131) build, so this bucket includes a separate `llama.cpp-cu131` package.
 
