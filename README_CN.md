@@ -38,9 +38,10 @@
 
 ### 🎌 ACGN 工具
 
-| 软件                                                   | 描述                                 |
-| ------------------------------------------------------ | ------------------------------------ |
-| **[JHenTai](https://github.com/jiangtian616/JHenTai)** | E-Hentai / ExHentai 跨平台漫画阅读器 |
+| 软件                                                             | 描述                                                        |
+| ---------------------------------------------------------------- | ----------------------------------------------------------- |
+| **[JHenTai](https://github.com/jiangtian616/JHenTai)**           | E-Hentai / ExHentai 跨平台漫画阅读器                        |
+| **[LunaTranslator](https://github.com/HIllya51/LunaTranslator)** | 强大的 Galgame 翻译工具，支持 Hook/OCR/剪贴板等多种翻译方式 |
 
 ### 🤖 AI 工具
 

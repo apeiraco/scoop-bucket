@@ -39,9 +39,10 @@ Curating practical tools that mainstream buckets overlook — developer utilitie
 
 ### 🎌 ACGN Tools
 
-| App                                                    | Description                                         |
-| ------------------------------------------------------ | --------------------------------------------------- |
-| **[JHenTai](https://github.com/jiangtian616/JHenTai)** | Cross-platform manga reader for E-Hentai & ExHentai |
+| App                                                              | Description                                                          |
+| ---------------------------------------------------------------- | -------------------------------------------------------------------- |
+| **[JHenTai](https://github.com/jiangtian616/JHenTai)**           | Cross-platform manga reader for E-Hentai & ExHentai                  |
+| **[LunaTranslator](https://github.com/HIllya51/LunaTranslator)** | A Visual Novel translation tool, with HOOK / OCR / clipboard support |
 
 ### 🤖 AI Tools
 
