@@ -27,10 +27,6 @@ Curating practical tools that mainstream buckets overlook — developer utilitie
 
 | App                                                                           | Description                                         |
 | ----------------------------------------------------------------------------- | --------------------------------------------------- |
-| **[Cheat Engine](https://cheatengine.org)**                                   | Memory scanner & debugger for single-player games   |
-| **[Game-Cheats-Manager](https://github.com/dyang886/Game-Cheats-Manager)**    | Download and manage game trainers with ease         |
-| **[Wemod-Patcher](https://github.com/k1tbyte/Wemod-Patcher)**                 | Unlock WeMod Pro features for free                  |
-| **[Watt-Toolkit](https://github.com/BeyondDimension/SteamTools)**             | Open-source Steam multifunctional toolbox (Steam++) |
 | **[ContextMenuManager](https://bluepointlilac.github.io/ContextMenuManager)** | Manage Windows right-click context menus            |
 | **[Dism++](https://github.com/Chuyu-Team/Dism-Multi-language)**               | Powerful Windows system optimization & cleanup tool |
 | **[UEFIExtract](https://github.com/LongSoft/UEFITool)**                       | UEFI firmware image extractor (Command Line)        |
@@ -41,8 +37,13 @@ Curating practical tools that mainstream buckets overlook — developer utilitie
 
 | App                                                              | Description                                                          |
 | ---------------------------------------------------------------- | -------------------------------------------------------------------- |
+| **[Cheat Engine](https://cheatengine.org)**                      | Memory scanner & debugger for single-player games                    |
+| **[Game-Cheats-Manager](https://github.com/dyang886/Game-Cheats-Manager)** | Download and manage game trainers with ease              |
 | **[JHenTai](https://github.com/jiangtian616/JHenTai)**           | Cross-platform manga reader for E-Hentai & ExHentai                  |
 | **[LunaTranslator](https://github.com/HIllya51/LunaTranslator)** | A Visual Novel translation tool, with HOOK / OCR / clipboard support |
+| **[MTool](https://mtool.app/)**                                  | A game translation and modding tool with free and paid tiers          |
+| **[Watt-Toolkit](https://github.com/BeyondDimension/SteamTools)** | Open-source Steam multifunctional toolbox (Steam++)                  |
+| **[Wemod-Patcher](https://github.com/k1tbyte/Wemod-Patcher)**    | Unlock WeMod Pro features for free                                   |
 
 ### 🤖 AI Tools
 

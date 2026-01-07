@@ -27,10 +27,6 @@
 
 | 软件                                                                          | 描述                                  |
 | ----------------------------------------------------------------------------- | ------------------------------------- |
-| **[Cheat Engine](https://cheatengine.org)**                                   | 经典内存扫描器与游戏调试工具          |
-| **[Game-Cheats-Manager](https://github.com/dyang886/Game-Cheats-Manager)**    | 游戏修改器下载管理器                  |
-| **[Wemod-Patcher](https://github.com/k1tbyte/Wemod-Patcher)**                 | WeMod Pro 功能解锁补丁                |
-| **[Watt-Toolkit](https://github.com/BeyondDimension/SteamTools)**             | Steam++ 开源多功能工具箱              |
 | **[ContextMenuManager](https://bluepointlilac.github.io/ContextMenuManager)** | Windows 右键菜单管理器                |
 | **[Dism++](https://github.com/Chuyu-Team/Dism-Multi-language)**               | 强大的 Windows 系统精简优化工具       |
 | **[UEFIExtract](https://github.com/LongSoft/UEFITool)**                       | UEFI 固件镜像提取工具（命令行版）     |
@@ -40,8 +36,13 @@
 
 | 软件                                                             | 描述                                                        |
 | ---------------------------------------------------------------- | ----------------------------------------------------------- |
+| **[Cheat Engine](https://cheatengine.org)**                      | 经典内存扫描器与游戏调试工具                                |
+| **[Game-Cheats-Manager](https://github.com/dyang886/Game-Cheats-Manager)** | 游戏修改器下载管理器                             |
 | **[JHenTai](https://github.com/jiangtian616/JHenTai)**           | E-Hentai / ExHentai 跨平台漫画阅读器                        |
 | **[LunaTranslator](https://github.com/HIllya51/LunaTranslator)** | 强大的 Galgame 翻译工具，支持 Hook/OCR/剪贴板等多种翻译方式 |
+| **[MTool](https://mtool.app/)**                                  | 游戏翻译与修改工具，提供免费基础功能与付费高级功能          |
+| **[Watt-Toolkit](https://github.com/BeyondDimension/SteamTools)** | Steam++ 开源多功能工具箱                                  |
+| **[Wemod-Patcher](https://github.com/k1tbyte/Wemod-Patcher)**    | WeMod Pro 功能解锁补丁                                      |
 
 ### 🤖 AI 工具
 
