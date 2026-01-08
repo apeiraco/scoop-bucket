@@ -15,22 +15,18 @@
     },
     "bin": [
         [
-            "Tool\\MTool.exe",
-            "mtool"
-        ],
-        [
             "Use me to open the Tool.bat",
-            "mtool-bat"
+            "mtool"
         ]
     ],
     "shortcuts": [
         [
-            "Tool\\MTool.exe",
+            "Use me to open the Tool.bat",
             "MTool"
         ],
         [
-            "Use me to open the Tool.bat",
-            "MTool Launcher"
+            "Tool\\MTool.exe",
+            "MTool (Direct)"
         ]
     ],
     "persist": [
