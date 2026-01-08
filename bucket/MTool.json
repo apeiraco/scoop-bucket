@@ -13,6 +13,11 @@
             "extract_dir": "MTool"
         }
     },
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\Tool\\fakeLocalStorage.json\")) {",
+        "    Set-Content \"$dir\\Tool\\fakeLocalStorage.json\" '{}' -Encoding UTF8",
+        "}"
+    ],
     "bin": [
         [
             "Use me to open the Tool.bat",
