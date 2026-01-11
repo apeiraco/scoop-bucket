@@ -39,6 +39,7 @@ Curating practical tools that mainstream buckets overlook — developer utilitie
 | ---------------------------------------------------------------- | -------------------------------------------------------------------- |
 | **[Cheat Engine](https://cheatengine.org)**                      | Memory scanner & debugger for single-player games                    |
 | **[Game-Cheats-Manager](https://github.com/dyang886/Game-Cheats-Manager)** | Download and manage game trainers with ease              |
+| **[Game-Save-Manager](https://github.com/dyang886/Game-Save-Manager)** | Easily backup and restore your game saves anytime                   |
 | **[JHenTai](https://github.com/jiangtian616/JHenTai)**           | Cross-platform manga reader for E-Hentai & ExHentai                  |
 | **[LunaTranslator](https://github.com/HIllya51/LunaTranslator)** | A Visual Novel translation tool, with HOOK / OCR / clipboard support |
 | **[MTool](https://mtool.app/)**                                  | A game translation and modding tool with free and paid tiers          |

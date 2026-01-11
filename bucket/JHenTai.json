@@ -21,7 +21,7 @@
         ]
     ],
     "checkver": {
-        "url": "https://github.com/jiangtian616/JHenTai/releases/latest",
+        "github": "https://github.com/jiangtian616/JHenTai",
         "regex": "v(\\d+\\.\\d+\\.\\d+\\+\\d+)"
     },
     "autoupdate": {

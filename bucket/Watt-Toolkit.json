@@ -22,7 +22,7 @@
         "Logs"
     ],
     "checkver": {
-        "url": "https://api.github.com/repos/BeyondDimension/SteamTools/releases",
+        "github": "https://github.com/BeyondDimension/SteamTools",
         "regex": "/releases/tag/([\\d.]+(-alpha|-beta|-rc)?(\\.\\d+)?)"
     },
     "autoupdate": {

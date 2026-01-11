@@ -19,8 +19,7 @@
     "innosetup": true,
     "persist": "apps",
     "checkver": {
-        "url": "https://github.com/dyang886/Game-Cheats-Manager/releases/latest",
-        "regex": "v(\\d+\\.\\d+\\.\\d+)"
+        "github": "https://github.com/dyang886/Game-Cheats-Manager"
     },
     "autoupdate": {
         "architecture": {

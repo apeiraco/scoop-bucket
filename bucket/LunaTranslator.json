@@ -34,7 +34,9 @@
         "userconfig",
         "translation_record"
     ],
-    "checkver": "github",
+    "checkver": {
+        "github": "https://github.com/HIllya51/LunaTranslator"
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {
