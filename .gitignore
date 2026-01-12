@@ -4,4 +4,3 @@
 page.html
 checkver-*.html
 temp/*
-!temp/.gitkeep
