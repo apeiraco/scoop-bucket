@@ -1,13 +1,13 @@
 {
-    "version": "7.5.0-7712",
+    "version": "7.6",
     "description": "Tool for modifying/debugging single player games and applications.",
     "homepage": "https://cheatengine.org/index.php",
     "license": {
         "identifier": "Freeware",
         "url": "https://github.com/cheat-engine/cheat-engine/issues/60#issuecomment-467317576"
     },
-    "url": "https://github.com/ardittristan/cheat-engine/releases/download/7.5.0-7712/release.zip",
-    "hash": "99E54CC29597AF79A151E62F90F653B5577691BC1094A12E6C1F1D88689E787D",
+    "url": "https://d5iv42o50fxks.cloudfront.net/gNzCWKR/76nk.exe",
+    "hash": "f96eca4a678f34c5d6c5e8b3ebb0f086f17ffc869c021e5576f8b906dace0336",
     "architecture": {
         "64bit": {
             "shortcuts": [
@@ -42,11 +42,12 @@
             ]
         }
     },
+    "innosetup": true,
     "checkver": {
-        "github": "https://github.com/ardittristan/cheat-engine",
-        "regex": "/releases/tag/([\\d.-]+)"
+        "url": "https://www.cheatengine.org/downloads.php",
+        "regex": "<a class=\"download_link\" href=\"https://[^\"/]+\\.cloudfront\\.net/(?<path>[^/]+)/(?<file>[^\"/]+\\.exe)\"[\\s\\S]*?>[\\s\\S]*?Download Cheat Engine\\s*(?<version>[\\d.]+)</a>"
     },
     "autoupdate": {
-        "url": "https://github.com/ardittristan/cheat-engine/releases/download/$version/release.zip"
+        "url": "https://d5iv42o50fxks.cloudfront.net/$matchPath/$matchFile"
     }
 }
