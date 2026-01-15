@@ -40,6 +40,7 @@
 | **[Game-Cheats-Manager](https://github.com/dyang886/Game-Cheats-Manager)** | 游戏修改器下载管理器                             |
 | **[Game-Save-Manager](https://github.com/dyang886/Game-Save-Manager)** | 游戏存档备份与恢复管理工具                         |
 | **[JHenTai](https://github.com/jiangtian616/JHenTai)**           | E-Hentai / ExHentai 跨平台漫画阅读器                        |
+| **[LinguaGacha](https://github.com/neavo/LinguaGacha)**          | AI 驱动的次世代文本翻译器，支持小说、游戏、字幕内容翻译      |
 | **[LunaTranslator](https://github.com/HIllya51/LunaTranslator)** | 强大的 Galgame 翻译工具，支持 Hook/OCR/剪贴板等多种翻译方式 |
 | **[MTool](https://mtool.app/)**                                  | 游戏翻译与修改工具，提供免费基础功能与付费高级功能          |
 | **[Watt-Toolkit](https://github.com/BeyondDimension/SteamTools)** | Steam++ 开源多功能工具箱                                  |

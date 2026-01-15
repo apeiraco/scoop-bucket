@@ -1,0 +1,39 @@
+{
+    "version": "0.56.0",
+    "description": "An AI-powered next-generation translator for novels, games, and subtitles",
+    "homepage": "https://github.com/neavo/LinguaGacha",
+    "license": "Freeware",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/neavo/LinguaGacha/releases/download/MANUAL_BUILD_v0.56.0/LinguaGacha_v0.56.0.zip",
+            "hash": "c54a997ec5069fef691c658f6e67f618d9c7e5231e13e5461a60b0da2658442a",
+            "extract_dir": "LinguaGacha"
+        }
+    },
+    "shortcuts": [
+        [
+            "app.exe",
+            "LinguaGacha"
+        ]
+    ],
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\config.json\") -or !(Get-Item \"$persist_dir\\config.json\").Length) {",
+        "    New-Item \"$persist_dir\\config.json\" -ItemType File -Force -ErrorAction SilentlyContinue | Out-Null",
+        "}"
+    ],
+    "persist": [
+        "resource\\preset",
+        "config.json"
+    ],
+    "checkver": {
+        "github": "https://github.com/neavo/LinguaGacha",
+        "regex": "MANUAL_BUILD_v([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/neavo/LinguaGacha/releases/download/MANUAL_BUILD_v$version/LinguaGacha_v$version.zip"
+            }
+        }
+    }
+}
