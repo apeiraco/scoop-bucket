@@ -37,6 +37,7 @@
 | 软件                                                             | 描述                                                        |
 | ---------------------------------------------------------------- | ----------------------------------------------------------- |
 | **[Cheat Engine](https://cheatengine.org)**                      | 经典内存扫描器与游戏调试工具                                |
+| **[MoveEpicGamesGames](https://github.com/MinshuG/MoveEpicGamesGames)** | Epic Games 游戏迁移/备份工具                    |
 | **[Game-Cheats-Manager](https://github.com/dyang886/Game-Cheats-Manager)** | 游戏修改器下载管理器                             |
 | **[Game-Save-Manager](https://github.com/dyang886/Game-Save-Manager)** | 游戏存档备份与恢复管理工具                         |
 | **[JHenTai](https://github.com/jiangtian616/JHenTai)**           | E-Hentai / ExHentai 跨平台漫画阅读器                        |
@@ -105,6 +106,8 @@ scoop update *
 - 软件有明确的开源许可或免费使用授权
 - 提供有效的 `checkver` 和 `autoupdate` 配置
 - 遵循 [Scoop App Manifests](https://github.com/ScoopInstaller/Scoop/wiki/App-Manifests) 规范
+- 除非应用仅提供 32 位下载，否则必须声明 `architecture` 字段
+- `checkver` 必须使用显式对象语法（如 `"checkver": { "github": "https://github.com/owner/repo" }`）
 
 ---
 

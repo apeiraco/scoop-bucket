@@ -38,6 +38,7 @@ Curating practical tools that mainstream buckets overlook — developer utilitie
 | App                                                              | Description                                                          |
 | ---------------------------------------------------------------- | -------------------------------------------------------------------- |
 | **[Cheat Engine](https://cheatengine.org)**                      | Memory scanner & debugger for single-player games                    |
+| **[MoveEpicGamesGames](https://github.com/MinshuG/MoveEpicGamesGames)** | A tool to move/backup Epic Games' games                  |
 | **[Game-Cheats-Manager](https://github.com/dyang886/Game-Cheats-Manager)** | Download and manage game trainers with ease              |
 | **[Game-Save-Manager](https://github.com/dyang886/Game-Save-Manager)** | Easily backup and restore your game saves anytime                   |
 | **[JHenTai](https://github.com/jiangtian616/JHenTai)**           | Cross-platform manga reader for E-Hentai & ExHentai                  |
@@ -106,6 +107,8 @@ Pull requests are welcome! Before submitting, please ensure:
 - The software has a clear open-source license or freeware terms
 - Valid `checkver` and `autoupdate` configurations are provided
 - Manifests follow [Scoop App Manifests](https://github.com/ScoopInstaller/Scoop/wiki/App-Manifests) guidelines
+- The `architecture` field is mandatory unless the app only provides a 32-bit download
+- Use explicit `checkver` object syntax (e.g., `"checkver": { "github": "https://github.com/owner/repo" }`)
 
 ---
 
