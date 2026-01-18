@@ -39,6 +39,7 @@ Curating practical tools that mainstream buckets overlook — developer utilitie
 | ---------------------------------------------------------------- | -------------------------------------------------------------------- |
 | **[Cheat Engine](https://cheatengine.org)**                      | Memory scanner & debugger for single-player games                    |
 | **[MoveEpicGamesGames](https://github.com/MinshuG/MoveEpicGamesGames)** | A tool to move/backup Epic Games' games                  |
+| **[HikariFieldClient](https://store.hikarifield.co.jp/client)**  | Download and play games you own on the HIKARI FIELD store |
 | **[Game-Cheats-Manager](https://github.com/dyang886/Game-Cheats-Manager)** | Download and manage game trainers with ease              |
 | **[Game-Save-Manager](https://github.com/dyang886/Game-Save-Manager)** | Easily backup and restore your game saves anytime                   |
 | **[JHenTai](https://github.com/jiangtian616/JHenTai)**           | Cross-platform manga reader for E-Hentai & ExHentai                  |
@@ -109,6 +110,17 @@ Pull requests are welcome! Before submitting, please ensure:
 - Manifests follow [Scoop App Manifests](https://github.com/ScoopInstaller/Scoop/wiki/App-Manifests) guidelines
 - The `architecture` field is mandatory unless the app only provides a 32-bit download
 - Use explicit `checkver` object syntax (e.g., `"checkver": { "github": "https://github.com/owner/repo" }`)
+
+### Common Installer Patterns
+
+| Type | Approach |
+| --- | --- |
+| **Zip / 7z** | Direct `url` — Scoop auto-extracts; use `extract_dir` if needed |
+| **Single exe** | `url` with `#/name.exe` fragment to keep the filename |
+| **Inno Setup** | `"innosetup": true` |
+| **NSIS** | Append `#/dl.7z` to `url` — 7-Zip natively extracts NSIS; use `extract_dir` to pick target folder |
+| **Electron NSIS** | `#/dl.7z` + `"extract_dir": "$PLUGINSDIR"` + `pre_install` to expand inner `app-64.7z` via `Expand-7zipArchive` |
+| **Zip-wrapped NSIS** | `pre_install` with two `Expand-7zipArchive` calls (NSIS layer → `app-64.7z`) |
 
 ---
 

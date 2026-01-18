@@ -38,6 +38,7 @@
 | ---------------------------------------------------------------- | ----------------------------------------------------------- |
 | **[Cheat Engine](https://cheatengine.org)**                      | 经典内存扫描器与游戏调试工具                                |
 | **[MoveEpicGamesGames](https://github.com/MinshuG/MoveEpicGamesGames)** | Epic Games 游戏迁移/备份工具                    |
+| **[HikariFieldClient](https://store.hikarifield.co.jp/client)**  | HIKARI FIELD 商城游戏下载与游玩客户端             |
 | **[Game-Cheats-Manager](https://github.com/dyang886/Game-Cheats-Manager)** | 游戏修改器下载管理器                             |
 | **[Game-Save-Manager](https://github.com/dyang886/Game-Save-Manager)** | 游戏存档备份与恢复管理工具                         |
 | **[JHenTai](https://github.com/jiangtian616/JHenTai)**           | E-Hentai / ExHentai 跨平台漫画阅读器                        |
@@ -108,6 +109,17 @@ scoop update *
 - 遵循 [Scoop App Manifests](https://github.com/ScoopInstaller/Scoop/wiki/App-Manifests) 规范
 - 除非应用仅提供 32 位下载，否则必须声明 `architecture` 字段
 - `checkver` 必须使用显式对象语法（如 `"checkver": { "github": "https://github.com/owner/repo" }`）
+
+### 常见安装包处理模式
+
+| 类型 | 处理方式 |
+| --- | --- |
+| **Zip / 7z 压缩包** | 直接 `url` — Scoop 自动解压，需要时用 `extract_dir` 指定子目录 |
+| **单文件 exe** | `url` 加 `#/name.exe` 片段以保留文件名 |
+| **Inno Setup** | `"innosetup": true` |
+| **NSIS** | `url` 后追加 `#/dl.7z` — 7-Zip 原生支持解压 NSIS，用 `extract_dir` 选取目标目录 |
+| **Electron NSIS** | `#/dl.7z` + `"extract_dir": "$PLUGINSDIR"` + `pre_install` 中用 `Expand-7zipArchive` 解压内部 `app-64.7z` |
+| **Zip 包裹 NSIS** | `pre_install` 中两步 `Expand-7zipArchive`（NSIS 层 → `app-64.7z`） |
 
 ---
 
