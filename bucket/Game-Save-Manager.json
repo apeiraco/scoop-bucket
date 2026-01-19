@@ -2,7 +2,10 @@
     "version": "2.1.0",
     "description": "Easily backup and restore your game saves anytime",
     "homepage": "https://github.com/dyang886/Game-Save-Manager",
-    "license": "GPL-3.0-only",
+    "license": {
+        "identifier": "GPL-3.0-only",
+        "url": "https://github.com/dyang886/Game-Save-Manager/blob/main/LICENSE.txt"
+    },
     "architecture": {
         "64bit": {
             "url": "https://github.com/dyang886/Game-Save-Manager/releases/download/v2.1.0/Game.Save.Manager.Setup.2.1.0.exe",

@@ -38,6 +38,7 @@ Curating practical tools that mainstream buckets overlook — developer utilitie
 | App                                                              | Description                                                          |
 | ---------------------------------------------------------------- | -------------------------------------------------------------------- |
 | **[Cheat Engine](https://cheatengine.org)**                      | Memory scanner & debugger for single-player games                    |
+| **[DLsiteNest](https://www.dlsite.com/modpub/guide/dlsitenest/en/)** | All-in-one DLsite client: store, viewer (DLsite Play), and community (DL Channel) |
 | **[MoveEpicGamesGames](https://github.com/MinshuG/MoveEpicGamesGames)** | A tool to move/backup Epic Games' games                  |
 | **[HikariFieldClient](https://store.hikarifield.co.jp/client)**  | Download and play games you own on the HIKARI FIELD store |
 | **[Game-Cheats-Manager](https://github.com/dyang886/Game-Cheats-Manager)** | Download and manage game trainers with ease              |
@@ -110,6 +111,7 @@ Pull requests are welcome! Before submitting, please ensure:
 - Manifests follow [Scoop App Manifests](https://github.com/ScoopInstaller/Scoop/wiki/App-Manifests) guidelines
 - The `architecture` field is mandatory unless the app only provides a 32-bit download
 - Use explicit `checkver` object syntax (e.g., `"checkver": { "github": "https://github.com/owner/repo" }`)
+- `license` should use object syntax with both `identifier` and `url` pointing to the upstream LICENSE file
 
 ### Common Installer Patterns
 

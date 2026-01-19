@@ -20,6 +20,7 @@ _Single source of truth for Agent identity, code standards, and project rules. S
 - For `bucket/*.json`, must follow [Scoop App Manifests](https://github.com/ScoopInstaller/Scoop/wiki/App-Manifests).
 - Current bucket default architecture is 64bit. But following the scoop principle, if the application provides only a 32bit download, the architecture field is not required. In all other cases, architecture field is mandatory.
 - `checkver`: Always use explicit object syntax with full URL (e.g., `"checkver": { "github": "https://github.com/owner/repo" }`). Never use the implicit shorthand `"checkver": "github"`.
+- `license`: Prefer object syntax with `identifier` + `url` (e.g., `"license": { "identifier": "MIT", "url": "https://github.com/owner/repo/blob/main/LICENSE" }`). Omit `url` only when no upstream license file exists.
 
 **Common Installer Patterns:**
 

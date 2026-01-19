@@ -2,7 +2,10 @@
     "version": "3.0.0-rc.16",
     "description": "Watt Toolkit is an open-source, cross-platform multifunctional toolbox for Steam.",
     "homepage": "https://github.com/BeyondDimension/SteamTools/",
-    "license": "GPL-3.0-only",
+    "license": {
+        "identifier": "GPL-3.0-only",
+        "url": "https://github.com/BeyondDimension/SteamTools/blob/main/LICENSE"
+    },
     "architecture": {
         "64bit": {
             "url": "https://github.com/BeyondDimension/SteamTools/releases/download/3.0.0-rc.16/Steam++_v3.0.0-rc.16_win_x64.7z",

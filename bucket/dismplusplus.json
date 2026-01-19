@@ -2,7 +2,10 @@
     "version": "10.1.1002.2",
     "description": "Dism++ is a GUI implementation of DISM based on the Component Based Servicing (CBS) interface.",
     "homepage": "https://github.com/Chuyu-Team/Dism-Multi-language",
-    "license": "MIT",
+    "license": {
+        "identifier": "MIT",
+        "url": "https://github.com/Chuyu-Team/Dism-Multi-language/blob/master/LICENSE"
+    },
     "notes": "Dism++ requires Administrator privileges to run. Accept the UAC prompt when launching.",
     "architecture": {
         "64bit": {

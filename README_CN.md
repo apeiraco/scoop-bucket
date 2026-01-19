@@ -37,6 +37,7 @@
 | 软件                                                             | 描述                                                        |
 | ---------------------------------------------------------------- | ----------------------------------------------------------- |
 | **[Cheat Engine](https://cheatengine.org)**                      | 经典内存扫描器与游戏调试工具                                |
+| **[DLsiteNest](https://www.dlsite.com/modpub/guide/dlsitenest/en/)** | DLsite 一站式客户端：商店、查看器（DLsite Play）与社区（DL Channel） |
 | **[MoveEpicGamesGames](https://github.com/MinshuG/MoveEpicGamesGames)** | Epic Games 游戏迁移/备份工具                    |
 | **[HikariFieldClient](https://store.hikarifield.co.jp/client)**  | HIKARI FIELD 商城游戏下载与游玩客户端             |
 | **[Game-Cheats-Manager](https://github.com/dyang886/Game-Cheats-Manager)** | 游戏修改器下载管理器                             |
@@ -109,6 +110,7 @@ scoop update *
 - 遵循 [Scoop App Manifests](https://github.com/ScoopInstaller/Scoop/wiki/App-Manifests) 规范
 - 除非应用仅提供 32 位下载，否则必须声明 `architecture` 字段
 - `checkver` 必须使用显式对象语法（如 `"checkver": { "github": "https://github.com/owner/repo" }`）
+- `license` 应使用对象语法同时声明 `identifier` 和指向上游 LICENSE 文件的 `url`
 
 ### 常见安装包处理模式
 

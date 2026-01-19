@@ -2,7 +2,10 @@
     "version": "0.2.4",
     "description": "A terminal text editor you can just use",
     "homepage": "https://github.com/sinelaw/fresh",
-    "license": "GPL-2.0-only",
+    "license": {
+        "identifier": "GPL-2.0-only",
+        "url": "https://github.com/sinelaw/fresh/blob/master/LICENSE"
+    },
     "architecture": {
         "64bit": {
             "url": "https://github.com/sinelaw/fresh/releases/download/v0.2.4/fresh-editor-x86_64-pc-windows-msvc.zip",

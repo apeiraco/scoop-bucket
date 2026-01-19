@@ -2,7 +2,10 @@
     "version": "2025-04-22T22-12-26Z",
     "description": "A high performance, distributed object storage server, designed for large-scale data infrastructure. (server)",
     "homepage": "https://min.io",
-    "license": "Apache-2.0",
+    "license": {
+        "identifier": "AGPL-3.0-only",
+        "url": "https://github.com/minio/minio/blob/master/LICENSE"
+    },
     "suggest": {
         "minio-client": "minio-client"
     },
