@@ -38,6 +38,7 @@ Curating practical tools that mainstream buckets overlook — developer utilitie
 | App                                                              | Description                                                          |
 | ---------------------------------------------------------------- | -------------------------------------------------------------------- |
 | **[Cheat Engine](https://cheatengine.org)**                      | Memory scanner & debugger for single-player games                    |
+| **[Dango-Translator](https://github.com/PantsuDango/Dango-Translator)** | An OCR-based screen translation tool supporting multiple translation engines |
 | **[DLsiteNest](https://www.dlsite.com/modpub/guide/dlsitenest/en/)** | All-in-one DLsite client: store, viewer (DLsite Play), and community (DL Channel) |
 | **[MoveEpicGamesGames](https://github.com/MinshuG/MoveEpicGamesGames)** | A tool to move/backup Epic Games' games                  |
 | **[HikariFieldClient](https://store.hikarifield.co.jp/client)**  | Download and play games you own on the HIKARI FIELD store |

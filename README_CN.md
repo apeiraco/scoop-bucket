@@ -37,6 +37,7 @@
 | 软件                                                             | 描述                                                        |
 | ---------------------------------------------------------------- | ----------------------------------------------------------- |
 | **[Cheat Engine](https://cheatengine.org)**                      | 经典内存扫描器与游戏调试工具                                |
+| **[Dango-Translator](https://github.com/PantsuDango/Dango-Translator)** | 基于 OCR 的屏幕翻译工具（团子翻译器），支持多种翻译引擎 |
 | **[DLsiteNest](https://www.dlsite.com/modpub/guide/dlsitenest/en/)** | DLsite 一站式客户端：商店、查看器（DLsite Play）与社区（DL Channel） |
 | **[MoveEpicGamesGames](https://github.com/MinshuG/MoveEpicGamesGames)** | Epic Games 游戏迁移/备份工具                    |
 | **[HikariFieldClient](https://store.hikarifield.co.jp/client)**  | HIKARI FIELD 商城游戏下载与游玩客户端             |
