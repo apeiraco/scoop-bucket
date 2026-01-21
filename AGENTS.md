@@ -22,6 +22,14 @@ _Single source of truth for Agent identity, code standards, and project rules. S
 - `checkver`: Always use explicit object syntax with full URL (e.g., `"checkver": { "github": "https://github.com/owner/repo" }`). Never use the implicit shorthand `"checkver": "github"`.
 - `license`: Prefer object syntax with `identifier` + `url` (e.g., `"license": { "identifier": "MIT", "url": "https://github.com/owner/repo/blob/main/LICENSE" }`). Omit `url` only when no upstream license file exists.
 
+**Action Guidelines:**
+
+- Local exploration (downloading installers, extracting archives, inspecting file structures) MUST be done in the `temp/` folder. Create it if it doesn't exist.
+- To determine `extract_dir`, `persist`, `shortcuts`, `license`, etc., combine:
+  1. Download and extract the installer/archive locally into `temp/` to inspect the actual file tree
+  2. Read the upstream repository's README, docs, and source code for hints
+  3. Form a hypothesis, then verify against the extracted contents
+
 **Common Installer Patterns:**
 
 | Type | Approach |
