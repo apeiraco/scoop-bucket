@@ -8,7 +8,7 @@
     "architecture": {
         "64bit": {
             "url": "https://dl.hdslb.com/mobile/fixed/bili_win/bili_win-install.exe?v=1.17.5#/bili_win-install.exe",
-            "hash": "a468f26b9a5d5cca2aca85da6225d8c6f549a1e708cdbf6285e5b95426f72cd7"
+            "hash": "9b448a1f83cf01bfc58b58dc73aa441cc99505eb0d422743e07e290f88da0e71"
         }
     },
     "installer": {
