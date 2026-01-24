@@ -4,19 +4,18 @@
         "identifier": "Proprietary",
         "url": "https://www.bilibili.com/protocal/licence.html"
     },
-    "extract_dir": "$PLUGINSDIR",
-    "extract_to": "package",
     "notes": "In Application Auto update has been disable",
     "architecture": {
         "64bit": {
-            "url": "https://dl.hdslb.com/mobile/fixed/bili_win/bili_win-install.exe?v=1.17.5#/dl.7z",
+            "url": "https://dl.hdslb.com/mobile/fixed/bili_win/bili_win-install.exe?v=1.17.5#/bili_win-install.exe",
             "hash": "a468f26b9a5d5cca2aca85da6225d8c6f549a1e708cdbf6285e5b95426f72cd7"
         }
     },
     "installer": {
         "script": [
+            "Expand-7zipArchive -Path \"$dir/bili_win-install.exe\" -DestinationPath \"$dir/package\" -ExtractDir '$PLUGINSDIR'",
             "Expand-7zipArchive -Path \"$dir/package/app-64.7z\" -DestinationPath \"$dir\"",
-            "Remove-Item \"$dir/package/\" -Recurse -Force",
+            "Remove-Item \"$dir/package\", \"$dir/bili_win-install.exe\" -Recurse -Force",
             "Set-Content -Value \"\" -Path \"$dir/resources/app-update.yml\""
         ]
     },
@@ -38,6 +37,6 @@
         "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
     },
     "autoupdate": {
-        "url": "https://dl.hdslb.com/mobile/fixed/bili_win/bili_win-install.exe?v=$version#/dl.7z"
+        "url": "https://dl.hdslb.com/mobile/fixed/bili_win/bili_win-install.exe?v=$version#/bili_win-install.exe"
     }
 }
