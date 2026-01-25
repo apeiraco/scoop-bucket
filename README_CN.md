@@ -36,6 +36,8 @@
 
 | 软件                                                             | 描述                                                        |
 | ---------------------------------------------------------------- | ----------------------------------------------------------- |
+| **[animeko](https://github.com/open-ani/animeko)**               | 一站式在线动画观看平台，支持弹幕                            |
+| **[bilibili](https://www.bilibili.com/)**                        | 哔哩哔哩 Windows 桌面客户端                                 |
 | **[Cheat Engine](https://cheatengine.org)**                      | 经典内存扫描器与游戏调试工具                                |
 | **[Dango-Translator](https://github.com/PantsuDango/Dango-Translator)** | 基于 OCR 的屏幕翻译工具（团子翻译器），支持多种翻译引擎 |
 | **[DLsiteNest](https://www.dlsite.com/modpub/guide/dlsitenest/en/)** | DLsite 一站式客户端：商店、查看器（DLsite Play）与社区（DL Channel） |
@@ -49,6 +51,12 @@
 | **[MTool](https://mtool.app/)**                                  | 游戏翻译与修改工具，提供免费基础功能与付费高级功能          |
 | **[Watt-Toolkit](https://github.com/BeyondDimension/SteamTools)** | Steam++ 开源多功能工具箱                                  |
 | **[Wemod-Patcher](https://github.com/k1tbyte/Wemod-Patcher)**    | WeMod Pro 功能解锁补丁                                      |
+
+### 🏠 生活工具
+
+| 软件                                                 | 描述                                     |
+| ---------------------------------------------------- | ---------------------------------------- |
+| **[qianji](https://www.qianjiapp.com/)**             | 无广告、不打扰、不后台的记账应用（钱迹） |
 
 ### 🤖 AI 工具
 

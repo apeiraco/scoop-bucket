@@ -37,6 +37,8 @@ Curating practical tools that mainstream buckets overlook — developer utilitie
 
 | App                                                              | Description                                                          |
 | ---------------------------------------------------------------- | -------------------------------------------------------------------- |
+| **[animeko](https://github.com/open-ani/animeko)**               | One-stop online anime watching platform with danmaku                 |
+| **[bilibili](https://www.bilibili.com/)**                        | Bilibili desktop client for Windows                                  |
 | **[Cheat Engine](https://cheatengine.org)**                      | Memory scanner & debugger for single-player games                    |
 | **[Dango-Translator](https://github.com/PantsuDango/Dango-Translator)** | An OCR-based screen translation tool supporting multiple translation engines |
 | **[DLsiteNest](https://www.dlsite.com/modpub/guide/dlsitenest/en/)** | All-in-one DLsite client: store, viewer (DLsite Play), and community (DL Channel) |
@@ -50,6 +52,12 @@ Curating practical tools that mainstream buckets overlook — developer utilitie
 | **[MTool](https://mtool.app/)**                                  | A game translation and modding tool with free and paid tiers          |
 | **[Watt-Toolkit](https://github.com/BeyondDimension/SteamTools)** | Open-source Steam multifunctional toolbox (Steam++)                  |
 | **[Wemod-Patcher](https://github.com/k1tbyte/Wemod-Patcher)**    | Unlock WeMod Pro features for free                                   |
+
+### 🏠 Life Tools
+
+| App                                                  | Description                                              |
+| ---------------------------------------------------- | -------------------------------------------------------- |
+| **[qianji](https://www.qianjiapp.com/)**             | Ad-free, non-intrusive, and non-background-running bookkeeping app |
 
 ### 🤖 AI Tools
 
