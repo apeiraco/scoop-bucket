@@ -1,10 +1,10 @@
-# 🚚 Scoop-Dumtruck
+# 🚚 Scoop-Apeiraco
 
 > *A bucket of unconventional software that official repos won't carry.*
 
 Curating practical tools that mainstream buckets overlook — developer utilities, geek essentials, ACGN apps, and more.
 
-[![Excavator](https://github.com/dumtruck/scoop-bucket/actions/workflows/excavator.yml/badge.svg)](https://github.com/dumtruck/scoop-bucket/actions/workflows/excavator.yml)
+[![Excavator](https://github.com/apeiraco/scoop-bucket/actions/workflows/excavator.yml/badge.svg)](https://github.com/apeiraco/scoop-bucket/actions/workflows/excavator.yml)
 [![License](https://img.shields.io/badge/license-Unlicense-blue)](LICENSE)
 
 **[🇨🇳 简体中文](README_CN.md)**
@@ -34,7 +34,8 @@ Curating practical tools that mainstream buckets overlook — developer utilitie
 | **[ContextMenuManager](https://bluepointlilac.github.io/ContextMenuManager)** | Manage Windows right-click context menus |
 | **[Dism++](https://github.com/Chuyu-Team/Dism-Multi-language)** | Powerful Windows system optimization & cleanup tool |
 | **[UEFIExtract](https://github.com/LongSoft/UEFITool)** | UEFI firmware image extractor (Command Line) |
-| **[UEFIFind](https://github.com/LongSoft/UEFITool)** | UEFI firmware image viewer and editor (New Engine) |
+| **[UEFIFind](https://github.com/LongSoft/UEFITool)** | UEFI firmware image finder (Command Line) |
+| **[UEFITool](https://github.com/LongSoft/UEFITool)** | UEFI firmware image viewer and editor (New Engine) |
 
 ### 🎌 ACGN Tools
 
@@ -44,7 +45,11 @@ Curating practical tools that mainstream buckets overlook — developer utilitie
 
 ### 🤖 AI Tools
 
-*Coming soon...*
+| App | Description |
+|-----|-------------|
+| **[llama.cpp](https://github.com/ggml-org/llama.cpp)** | Inference of LLaMA model in pure C/C++ (cpu/cuda/hip/opencl/vulkan/sycl variants) |
+
+**Note:** `llama.cpp` has multiple manifests here (cpu/cuda/hip/opencl/vulkan/sycl). Upstream official releases currently do not provide a CUDA 13.1 (cu131) build, so this bucket includes a separate `llama.cpp-cu131` package.
 
 ---
 
@@ -53,7 +58,7 @@ Curating practical tools that mainstream buckets overlook — developer utilitie
 ### Add this bucket
 
 ```powershell
-scoop bucket add dumtruck https://github.com/dumtruck/scoop-bucket.git
+scoop bucket add apeiraco https://github.com/apeiraco/scoop-bucket.git
 ```
 
 ### Verify installation
@@ -69,7 +74,7 @@ scoop bucket list
 scoop install cheat-engine
 
 # Install with prefix (use only when there's a name conflict)
-scoop install dumtruck/cheat-engine
+scoop install apeiraco/cheat-engine
 ```
 
 ### Update apps

@@ -1,10 +1,10 @@
-# 🚚 Scoop-Dumtruck
+# 🚚 Scoop-Apeiraco
 
 > *收录那些官方仓库不会接纳的非主流软件*
 
 精选主流 bucket 忽略的实用工具——开发者工具、极客利器、ACGN 应用等。
 
-[![Excavator](https://github.com/dumtruck/scoop-bucket/actions/workflows/excavator.yml/badge.svg)](https://github.com/dumtruck/scoop-bucket/actions/workflows/excavator.yml)
+[![Excavator](https://github.com/apeiraco/scoop-bucket/actions/workflows/excavator.yml/badge.svg)](https://github.com/apeiraco/scoop-bucket/actions/workflows/excavator.yml)
 [![License](https://img.shields.io/badge/license-Unlicense-blue)](LICENSE)
 
 **[🇬🇧 English](README.md)**
@@ -44,7 +44,11 @@
 
 ### 🤖 AI 工具
 
-*敬请期待...*
+| 软件 | 描述 |
+|------|------|
+| **[llama.cpp](https://github.com/ggml-org/llama.cpp)** | 纯 C/C++ 实现的 LLaMA 推理工具（cpu/cuda/hip/opencl/vulkan/sycl 变体） |
+
+**说明：** 本仓库提供 `llama.cpp` 的多个变体清单（cpu/cuda/hip/opencl/vulkan/sycl）。上游官方发布目前没有 CUDA 13.1（cu131）版本，因此这里单独提供了 `llama.cpp-cu131` 包。
 
 ---
 
@@ -53,7 +57,7 @@
 ### 添加 Bucket
 
 ```powershell
-scoop bucket add dumtruck https://github.com/dumtruck/scoop-bucket.git
+scoop bucket add apeiraco https://github.com/apeiraco/scoop-bucket.git
 ```
 
 ### 验证添加
@@ -69,7 +73,7 @@ scoop bucket list
 scoop install cheat-engine
 
 # 带前缀安装（仅在名称冲突时使用）
-scoop install dumtruck/cheat-engine
+scoop install apeiraco/cheat-engine
 ```
 
 ### 更新软件
