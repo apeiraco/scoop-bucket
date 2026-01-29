@@ -37,6 +37,10 @@
         "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
     },
     "autoupdate": {
-        "url": "https://dl.hdslb.com/mobile/fixed/bili_win/bili_win-install.exe?v=$version#/bili_win-install.exe"
+        "architecture": {
+            "64bit": {
+                "url": "https://dl.hdslb.com/mobile/fixed/bili_win/bili_win-install.exe?v=$version#/bili_win-install.exe"
+            }
+        }
     }
 }
