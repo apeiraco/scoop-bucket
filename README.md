@@ -1,4 +1,4 @@
-# 🚚 Scoop-Apeiraco
+# 🚚 Apeiraco Scoop-Bucket
 
 > _A bucket of unconventional software that official repos won't carry._
 
@@ -35,31 +35,31 @@ Curating practical tools that mainstream buckets overlook — developer utilitie
 
 ### 🎌 ACGN Tools
 
-| App                                                              | Description                                                          |
-| ---------------------------------------------------------------- | -------------------------------------------------------------------- |
-| **[animeko](https://github.com/open-ani/animeko)**               | One-stop online anime watching platform with danmaku                 |
-| **[bilibili](https://www.bilibili.com/)**                        | Bilibili desktop client for Windows                                  |
-| **[Cheat Engine](https://cheatengine.org)**                      | Memory scanner & debugger for single-player games                    |
-| **[Dango-Translator](https://github.com/PantsuDango/Dango-Translator)** | An OCR-based screen translation tool supporting multiple translation engines |
-| **[DLsiteNest](https://www.dlsite.com/modpub/guide/dlsitenest/en/)** | All-in-one DLsite client: store, viewer (DLsite Play), and community (DL Channel) |
-| **[MoveEpicGamesGames](https://github.com/MinshuG/MoveEpicGamesGames)** | A tool to move/backup Epic Games' games                  |
-| **[HikariFieldClient](https://store.hikarifield.co.jp/client)**  | Download and play games you own on the HIKARI FIELD store |
-| **[Game-Cheats-Manager](https://github.com/dyang886/Game-Cheats-Manager)** | Download and manage game trainers with ease              |
-| **[Game-Save-Manager](https://github.com/dyang886/Game-Save-Manager)** | Easily backup and restore your game saves anytime                   |
-| **[JHenTai](https://github.com/jiangtian616/JHenTai)**           | Cross-platform manga reader for E-Hentai & ExHentai                  |
-| **[LinguaGacha](https://github.com/neavo/LinguaGacha)**          | An AI-powered next-generation translator for novels, games, and subtitles |
-| **[LunaTranslator](https://github.com/HIllya51/LunaTranslator)** | A Visual Novel translation tool, with HOOK / OCR / clipboard support |
-| **[MTool](https://mtool.app/)**                                  | A game translation and modding tool with free and paid tiers          |
-| **[Watt-Toolkit](https://github.com/BeyondDimension/SteamTools)** | Open-source Steam multifunctional toolbox (Steam++)                  |
-| **[Wemod-Patcher](https://github.com/k1tbyte/Wemod-Patcher)**    | Unlock WeMod Pro features for free                                   |
+| App                                                                        | Description                                                                       |
+| -------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| **[animeko](https://github.com/open-ani/animeko)**                         | One-stop online anime watching platform with danmaku                              |
+| **[bilibili](https://www.bilibili.com/)**                                  | Bilibili desktop client for Windows                                               |
+| **[Cheat Engine](https://cheatengine.org)**                                | Memory scanner & debugger for single-player games                                 |
+| **[Dango-Translator](https://github.com/PantsuDango/Dango-Translator)**    | An OCR-based screen translation tool supporting multiple translation engines      |
+| **[DLsiteNest](https://www.dlsite.com/modpub/guide/dlsitenest/en/)**       | All-in-one DLsite client: store, viewer (DLsite Play), and community (DL Channel) |
+| **[MoveEpicGamesGames](https://github.com/MinshuG/MoveEpicGamesGames)**    | A tool to move/backup Epic Games' games                                           |
+| **[HikariFieldClient](https://store.hikarifield.co.jp/client)**            | Download and play games you own on the HIKARI FIELD store                         |
+| **[Game-Cheats-Manager](https://github.com/dyang886/Game-Cheats-Manager)** | Download and manage game trainers with ease                                       |
+| **[Game-Save-Manager](https://github.com/dyang886/Game-Save-Manager)**     | Easily backup and restore your game saves anytime                                 |
+| **[JHenTai](https://github.com/jiangtian616/JHenTai)**                     | Cross-platform manga reader for E-Hentai & ExHentai                               |
+| **[LinguaGacha](https://github.com/neavo/LinguaGacha)**                    | An AI-powered next-generation translator for novels, games, and subtitles         |
+| **[LunaTranslator](https://github.com/HIllya51/LunaTranslator)**           | A Visual Novel translation tool, with HOOK / OCR / clipboard support              |
+| **[MTool](https://mtool.app/)**                                            | A game translation and modding tool with free and paid tiers                      |
+| **[Watt-Toolkit](https://github.com/BeyondDimension/SteamTools)**          | Open-source Steam multifunctional toolbox (Steam++)                               |
+| **[Wemod-Patcher](https://github.com/k1tbyte/Wemod-Patcher)**              | Unlock WeMod Pro features for free                                                |
 
 ### 🏠 Life Tools
 
-| App                                                  | Description                                                        |
-| ---------------------------------------------------- | ------------------------------------------------------------------ |
-| **[BaiduNetdisk](http://pan.baidu.com)**             | Baidu cloud storage service for file upload, sync, and access      |
-| **[calibre-web](https://github.com/janeczku/calibre-web)** | Web app for browsing, reading, and downloading eBooks via Calibre |
-| **[qianji](https://www.qianjiapp.com/)**             | Ad-free, non-intrusive, and non-background-running bookkeeping app |
+| App                                                        | Description                                                        |
+| ---------------------------------------------------------- | ------------------------------------------------------------------ |
+| **[BaiduNetdisk](http://pan.baidu.com)**                   | Baidu cloud storage service for file upload, sync, and access      |
+| **[calibre-web](https://github.com/janeczku/calibre-web)** | Web app for browsing, reading, and downloading eBooks via Calibre  |
+| **[qianji](https://www.qianjiapp.com/)**                   | Ad-free, non-intrusive, and non-background-running bookkeeping app |
 
 ### 🤖 AI Tools
 
@@ -126,14 +126,14 @@ Pull requests are welcome! Before submitting, please ensure:
 
 ### Common Installer Patterns
 
-| Type | Approach |
-| --- | --- |
-| **Zip / 7z** | Direct `url` — Scoop auto-extracts; use `extract_dir` if needed |
-| **Single exe** | `url` with `#/name.exe` fragment to keep the filename |
-| **Inno Setup** | `"innosetup": true` |
-| **NSIS** | Append `#/dl.7z` to `url` — 7-Zip natively extracts NSIS; use `extract_dir` to pick target folder |
-| **Electron NSIS** | `#/dl.7z` + `"extract_dir": "$PLUGINSDIR"` + `pre_install` to expand inner `app-64.7z` via `Expand-7zipArchive` |
-| **Zip-wrapped NSIS** | `pre_install` with two `Expand-7zipArchive` calls (NSIS layer → `app-64.7z`) |
+| Type                 | Approach                                                                                                        |
+| -------------------- | --------------------------------------------------------------------------------------------------------------- |
+| **Zip / 7z**         | Direct `url` — Scoop auto-extracts; use `extract_dir` if needed                                                 |
+| **Single exe**       | `url` with `#/name.exe` fragment to keep the filename                                                           |
+| **Inno Setup**       | `"innosetup": true`                                                                                             |
+| **NSIS**             | Append `#/dl.7z` to `url` — 7-Zip natively extracts NSIS; use `extract_dir` to pick target folder               |
+| **Electron NSIS**    | `#/dl.7z` + `"extract_dir": "$PLUGINSDIR"` + `pre_install` to expand inner `app-64.7z` via `Expand-7zipArchive` |
+| **Zip-wrapped NSIS** | `pre_install` with two `Expand-7zipArchive` calls (NSIS layer → `app-64.7z`)                                    |
 
 ---
 

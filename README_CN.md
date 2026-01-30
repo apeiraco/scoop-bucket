@@ -1,4 +1,4 @@
-# 🚚 Scoop-Apeiraco
+# 🚚 Apeiraco Scoop-Bucket
 
 > _收录那些官方仓库不会接纳的非主流软件_
 
@@ -34,31 +34,31 @@
 
 ### 🎌 ACGN 工具
 
-| 软件                                                             | 描述                                                        |
-| ---------------------------------------------------------------- | ----------------------------------------------------------- |
-| **[animeko](https://github.com/open-ani/animeko)**               | 一站式在线动画观看平台，支持弹幕                            |
-| **[bilibili](https://www.bilibili.com/)**                        | 哔哩哔哩 Windows 桌面客户端                                 |
-| **[Cheat Engine](https://cheatengine.org)**                      | 经典内存扫描器与游戏调试工具                                |
-| **[Dango-Translator](https://github.com/PantsuDango/Dango-Translator)** | 基于 OCR 的屏幕翻译工具（团子翻译器），支持多种翻译引擎 |
-| **[DLsiteNest](https://www.dlsite.com/modpub/guide/dlsitenest/en/)** | DLsite 一站式客户端：商店、查看器（DLsite Play）与社区（DL Channel） |
-| **[MoveEpicGamesGames](https://github.com/MinshuG/MoveEpicGamesGames)** | Epic Games 游戏迁移/备份工具                    |
-| **[HikariFieldClient](https://store.hikarifield.co.jp/client)**  | HIKARI FIELD 商城游戏下载与游玩客户端             |
-| **[Game-Cheats-Manager](https://github.com/dyang886/Game-Cheats-Manager)** | 游戏修改器下载管理器                             |
-| **[Game-Save-Manager](https://github.com/dyang886/Game-Save-Manager)** | 游戏存档备份与恢复管理工具                         |
-| **[JHenTai](https://github.com/jiangtian616/JHenTai)**           | E-Hentai / ExHentai 跨平台漫画阅读器                        |
-| **[LinguaGacha](https://github.com/neavo/LinguaGacha)**          | AI 驱动的次世代文本翻译器，支持小说、游戏、字幕内容翻译      |
-| **[LunaTranslator](https://github.com/HIllya51/LunaTranslator)** | 强大的 Galgame 翻译工具，支持 Hook/OCR/剪贴板等多种翻译方式 |
-| **[MTool](https://mtool.app/)**                                  | 游戏翻译与修改工具，提供免费基础功能与付费高级功能          |
-| **[Watt-Toolkit](https://github.com/BeyondDimension/SteamTools)** | Steam++ 开源多功能工具箱                                  |
-| **[Wemod-Patcher](https://github.com/k1tbyte/Wemod-Patcher)**    | WeMod Pro 功能解锁补丁                                      |
+| 软件                                                                       | 描述                                                                 |
+| -------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| **[animeko](https://github.com/open-ani/animeko)**                         | 一站式在线动画观看平台，支持弹幕                                     |
+| **[bilibili](https://www.bilibili.com/)**                                  | 哔哩哔哩 Windows 桌面客户端                                          |
+| **[Cheat Engine](https://cheatengine.org)**                                | 经典内存扫描器与游戏调试工具                                         |
+| **[Dango-Translator](https://github.com/PantsuDango/Dango-Translator)**    | 基于 OCR 的屏幕翻译工具（团子翻译器），支持多种翻译引擎              |
+| **[DLsiteNest](https://www.dlsite.com/modpub/guide/dlsitenest/en/)**       | DLsite 一站式客户端：商店、查看器（DLsite Play）与社区（DL Channel） |
+| **[MoveEpicGamesGames](https://github.com/MinshuG/MoveEpicGamesGames)**    | Epic Games 游戏迁移/备份工具                                         |
+| **[HikariFieldClient](https://store.hikarifield.co.jp/client)**            | HIKARI FIELD 商城游戏下载与游玩客户端                                |
+| **[Game-Cheats-Manager](https://github.com/dyang886/Game-Cheats-Manager)** | 游戏修改器下载管理器                                                 |
+| **[Game-Save-Manager](https://github.com/dyang886/Game-Save-Manager)**     | 游戏存档备份与恢复管理工具                                           |
+| **[JHenTai](https://github.com/jiangtian616/JHenTai)**                     | E-Hentai / ExHentai 跨平台漫画阅读器                                 |
+| **[LinguaGacha](https://github.com/neavo/LinguaGacha)**                    | AI 驱动的次世代文本翻译器，支持小说、游戏、字幕内容翻译              |
+| **[LunaTranslator](https://github.com/HIllya51/LunaTranslator)**           | 强大的 Galgame 翻译工具，支持 Hook/OCR/剪贴板等多种翻译方式          |
+| **[MTool](https://mtool.app/)**                                            | 游戏翻译与修改工具，提供免费基础功能与付费高级功能                   |
+| **[Watt-Toolkit](https://github.com/BeyondDimension/SteamTools)**          | Steam++ 开源多功能工具箱                                             |
+| **[Wemod-Patcher](https://github.com/k1tbyte/Wemod-Patcher)**              | WeMod Pro 功能解锁补丁                                               |
 
 ### 🏠 生活工具
 
-| 软件                                                 | 描述                                             |
-| ---------------------------------------------------- | ------------------------------------------------ |
-| **[BaiduNetdisk](http://pan.baidu.com)**             | 百度网盘客户端，支持文件上传、同步与多端访问     |
+| 软件                                                       | 描述                                          |
+| ---------------------------------------------------------- | --------------------------------------------- |
+| **[BaiduNetdisk](http://pan.baidu.com)**                   | 百度网盘客户端，支持文件上传、同步与多端访问  |
 | **[calibre-web](https://github.com/janeczku/calibre-web)** | 基于 Calibre 的电子书在线浏览、阅读与下载工具 |
-| **[qianji](https://www.qianjiapp.com/)**             | 无广告、不打扰、不后台的记账应用（钱迹）         |
+| **[qianji](https://www.qianjiapp.com/)**                   | 无广告、不打扰、不后台的记账应用（钱迹）      |
 
 ### 🤖 AI 工具
 
@@ -125,14 +125,14 @@ scoop update *
 
 ### 常见安装包处理模式
 
-| 类型 | 处理方式 |
-| --- | --- |
-| **Zip / 7z 压缩包** | 直接 `url` — Scoop 自动解压，需要时用 `extract_dir` 指定子目录 |
-| **单文件 exe** | `url` 加 `#/name.exe` 片段以保留文件名 |
-| **Inno Setup** | `"innosetup": true` |
-| **NSIS** | `url` 后追加 `#/dl.7z` — 7-Zip 原生支持解压 NSIS，用 `extract_dir` 选取目标目录 |
-| **Electron NSIS** | `#/dl.7z` + `"extract_dir": "$PLUGINSDIR"` + `pre_install` 中用 `Expand-7zipArchive` 解压内部 `app-64.7z` |
-| **Zip 包裹 NSIS** | `pre_install` 中两步 `Expand-7zipArchive`（NSIS 层 → `app-64.7z`） |
+| 类型                | 处理方式                                                                                                  |
+| ------------------- | --------------------------------------------------------------------------------------------------------- |
+| **Zip / 7z 压缩包** | 直接 `url` — Scoop 自动解压，需要时用 `extract_dir` 指定子目录                                            |
+| **单文件 exe**      | `url` 加 `#/name.exe` 片段以保留文件名                                                                    |
+| **Inno Setup**      | `"innosetup": true`                                                                                       |
+| **NSIS**            | `url` 后追加 `#/dl.7z` — 7-Zip 原生支持解压 NSIS，用 `extract_dir` 选取目标目录                           |
+| **Electron NSIS**   | `#/dl.7z` + `"extract_dir": "$PLUGINSDIR"` + `pre_install` 中用 `Expand-7zipArchive` 解压内部 `app-64.7z` |
+| **Zip 包裹 NSIS**   | `pre_install` 中两步 `Expand-7zipArchive`（NSIS 层 → `app-64.7z`）                                        |
 
 ---
 
