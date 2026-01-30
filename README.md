@@ -55,8 +55,10 @@ Curating practical tools that mainstream buckets overlook — developer utilitie
 
 ### 🏠 Life Tools
 
-| App                                                  | Description                                              |
-| ---------------------------------------------------- | -------------------------------------------------------- |
+| App                                                  | Description                                                        |
+| ---------------------------------------------------- | ------------------------------------------------------------------ |
+| **[BaiduNetdisk](http://pan.baidu.com)**             | Baidu cloud storage service for file upload, sync, and access      |
+| **[calibre-web](https://github.com/janeczku/calibre-web)** | Web app for browsing, reading, and downloading eBooks via Calibre |
 | **[qianji](https://www.qianjiapp.com/)**             | Ad-free, non-intrusive, and non-background-running bookkeeping app |
 
 ### 🤖 AI Tools

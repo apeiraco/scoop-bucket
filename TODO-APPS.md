@@ -1,0 +1,24 @@
+# TODO APPS
+
+- [ ] MSI Afterburner
+- [ ] Cherry Studio
+- [ ] ATK HUB
+- [ ] TOPPING Professional Control Center
+- [ ] LM Studio
+- [ ] RTSS (Guru3D RTSS Rivatuner Statistics Server)
+- [ ] A HUB
+- [ ] Discord
+- [ ] Telegram
+- [ ] Dandanplay
+- [ ] TourBox Console
+- [ ] LinkEase
+- [ ] Wechat
+- [ ] ~~K-Lite Codec Pack (portal install cause strange issues)~~
+- [ ] 115 Netdisk
+- [ ] DesignDoll
+- [ ] EdgelessHub
+- [ ] XTW-5Programmer
+- [ ] UC Netdisk
+- [ ] Quark Netdisk
+- [ ] Tbtool
+- [ ] RaiDrive
