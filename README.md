@@ -40,6 +40,7 @@ Curating practical tools that mainstream buckets overlook — developer utilitie
 | **[animeko](https://github.com/open-ani/animeko)**                         | One-stop online anime watching platform with danmaku                              |
 | **[bilibili](https://www.bilibili.com/)**                                  | Bilibili desktop client for Windows                                               |
 | **[Cheat Engine](https://cheatengine.org)**                                | Memory scanner & debugger for single-player games                                 |
+| **[dandanplay](https://www.dandanplay.com/)**                              | Free bangumi player with danmaku support                                          |
 | **[Dango-Translator](https://github.com/PantsuDango/Dango-Translator)**    | An OCR-based screen translation tool supporting multiple translation engines      |
 | **[DLsiteNest](https://www.dlsite.com/modpub/guide/dlsitenest/en/)**       | All-in-one DLsite client: store, viewer (DLsite Play), and community (DL Channel) |
 | **[MoveEpicGamesGames](https://github.com/MinshuG/MoveEpicGamesGames)**    | A tool to move/backup Epic Games' games                                           |
@@ -59,13 +60,16 @@ Curating practical tools that mainstream buckets overlook — developer utilitie
 | ---------------------------------------------------------- | ------------------------------------------------------------------ |
 | **[BaiduNetdisk](http://pan.baidu.com)**                   | Baidu cloud storage service for file upload, sync, and access      |
 | **[calibre-web](https://github.com/janeczku/calibre-web)** | Web app for browsing, reading, and downloading eBooks via Calibre  |
+| **[LinkEase](https://www.linkease.com)**                   | Cross-platform P2P data sync and private cloud service             |
 | **[qianji](https://www.qianjiapp.com/)**                   | Ad-free, non-intrusive, and non-background-running bookkeeping app |
 
 ### 🤖 AI Tools
 
 | App                                                                                  | Description                                                                       |
 | ------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------- |
+| **[cherry-studio](https://cherry-ai.com/)**                                          | Desktop client that supports multiple LLM providers                               |
 | **[llama.cpp](https://github.com/ggml-org/llama.cpp)**                               | Inference of LLaMA model in pure C/C++ (cpu/cuda/hip/opencl/vulkan/sycl variants) |
+| **[LMStudio](https://lmstudio.ai/)**                                                | Discover, download, and run local LLMs                                            |
 | **[Sakura-Launcher-GUI](https://github.com/PiDanShouRouZhouXD/Sakura_Launcher_GUI)** | A GUI Launcher for Sakura LLM                                                     |
 
 **Note:** `llama.cpp` has multiple manifests here (cpu/cuda/hip/opencl/vulkan/sycl). Upstream official releases currently do not provide a CUDA 13.1 (cu131) build, so this bucket includes a separate `llama.cpp-cu131` package.

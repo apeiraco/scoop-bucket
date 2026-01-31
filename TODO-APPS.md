@@ -1,17 +1,17 @@
 # TODO APPS
 
 - [ ] MSI Afterburner
-- [ ] Cherry Studio
+- [x] Cherry Studio
 - [ ] ATK HUB
 - [ ] TOPPING Professional Control Center
-- [ ] LM Studio
+- [x] LM Studio
 - [ ] RTSS (Guru3D RTSS Rivatuner Statistics Server)
 - [ ] A HUB
 - [ ] Discord
 - [ ] Telegram
-- [ ] Dandanplay
+- [x] Dandanplay
 - [ ] TourBox Console
-- [ ] LinkEase
+- [x] LinkEase
 - [ ] Wechat
 - [ ] ~~K-Lite Codec Pack (portal install cause strange issues)~~
 - [ ] 115 Netdisk

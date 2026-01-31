@@ -23,6 +23,7 @@
             "BaiduNetdisk"
         ]
     ],
+    "notes": "User data is spread across multiple AppData dirs (baidu, BaiduNetdisk, BaiduYunGuanjia, BaiduYunKernel). Due to this complexity, we do not persist user data folders. You may need to re-login after reinstall.",
     "persist": "users",
     "checkver": {
         "url": "http://pan.baidu.com/disk/cmsdata?do=client",

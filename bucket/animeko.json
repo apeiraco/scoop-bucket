@@ -24,14 +24,14 @@
     },
     "installer": {
         "script": [
-            ". \"$bucketsdir\\apeiraco\\bin\\fs-utils.ps1\"",
-            "Set-FolderLinked -TargetDir \"$persist_dir\\appdata\" -JunctionDir \"$env:APPDATA\\Him188\\Ani\""
+            ". \"$bucketsdir\\apeiraco\\bin\\persist-utils.ps1\"",
+            "Set-PersistLinks -PersistDir $persist_dir -LinkMap @{ 'appdata' = \"$env:APPDATA\\Him188\\Ani\" }"
         ]
     },
     "uninstaller": {
         "script": [
-            ". \"$bucketsdir\\apeiraco\\bin\\fs-utils.ps1\"",
-            "Set-FolderUnlinked -JunctionDir \"$env:APPDATA\\Him188\\Ani\" -TargetDir \"$persist_dir\\appdata\""
+            ". \"$bucketsdir\\apeiraco\\bin\\persist-utils.ps1\"",
+            "Remove-PersistLinks -PersistDir $persist_dir -LinkMap @{ 'appdata' = \"$env:APPDATA\\Him188\\Ani\" }"
         ]
     },
     "autoupdate": {

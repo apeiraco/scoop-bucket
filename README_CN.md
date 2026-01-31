@@ -39,6 +39,7 @@
 | **[animeko](https://github.com/open-ani/animeko)**                         | 一站式在线动画观看平台，支持弹幕                                     |
 | **[bilibili](https://www.bilibili.com/)**                                  | 哔哩哔哩 Windows 桌面客户端                                          |
 | **[Cheat Engine](https://cheatengine.org)**                                | 经典内存扫描器与游戏调试工具                                         |
+| **[dandanplay](https://www.dandanplay.com/)**                              | 免费的弹幕视频播放器（弹弹play）                                     |
 | **[Dango-Translator](https://github.com/PantsuDango/Dango-Translator)**    | 基于 OCR 的屏幕翻译工具（团子翻译器），支持多种翻译引擎              |
 | **[DLsiteNest](https://www.dlsite.com/modpub/guide/dlsitenest/en/)**       | DLsite 一站式客户端：商店、查看器（DLsite Play）与社区（DL Channel） |
 | **[MoveEpicGamesGames](https://github.com/MinshuG/MoveEpicGamesGames)**    | Epic Games 游戏迁移/备份工具                                         |
@@ -58,13 +59,16 @@
 | ---------------------------------------------------------- | --------------------------------------------- |
 | **[BaiduNetdisk](http://pan.baidu.com)**                   | 百度网盘客户端，支持文件上传、同步与多端访问  |
 | **[calibre-web](https://github.com/janeczku/calibre-web)** | 基于 Calibre 的电子书在线浏览、阅读与下载工具 |
+| **[LinkEase](https://www.linkease.com)**                   | 跨平台 P2P 数据互通与私有云服务（易有云）     |
 | **[qianji](https://www.qianjiapp.com/)**                   | 无广告、不打扰、不后台的记账应用（钱迹）      |
 
 ### 🤖 AI 工具
 
 | 软件                                                                                 | 描述                                                                   |
 | ------------------------------------------------------------------------------------ | ---------------------------------------------------------------------- |
+| **[cherry-studio](https://cherry-ai.com/)**                                          | 支持多种 LLM 供应商的桌面客户端                                        |
 | **[llama.cpp](https://github.com/ggml-org/llama.cpp)**                               | 纯 C/C++ 实现的 LLaMA 推理工具（cpu/cuda/hip/opencl/vulkan/sycl 变体） |
+| **[LMStudio](https://lmstudio.ai/)**                                                | 本地大语言模型发现、下载与运行工具                                     |
 | **[Sakura-Launcher-GUI](https://github.com/PiDanShouRouZhouXD/Sakura_Launcher_GUI)** | SakuraLLM 的图形化启动器                                               |
 
 **说明：** 本仓库提供 `llama.cpp` 的多个变体清单（cpu/cuda/hip/opencl/vulkan/sycl）。上游官方发布目前没有 CUDA 13.1（cu131）版本，因此这里单独提供了 `llama.cpp-cu131` 包。

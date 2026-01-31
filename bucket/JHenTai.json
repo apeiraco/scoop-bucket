@@ -17,6 +17,18 @@
         "Move-Item -Path \"$dir\\JHenTai_*\\*\" -Destination \"$dir\"",
         "Remove-Item \"$dir\\JHenTai_*\" -Force -Recurse"
     ],
+    "installer": {
+        "script": [
+            ". \"$bucketsdir\\apeiraco\\bin\\persist-utils.ps1\"",
+            "Set-PersistLinks -PersistDir $persist_dir -LinkMap @{ 'appdata' = \"$env:APPDATA\\top.jtmonster\\jhentai\" }"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            ". \"$bucketsdir\\apeiraco\\bin\\persist-utils.ps1\"",
+            "Remove-PersistLinks -PersistDir $persist_dir -LinkMap @{ 'appdata' = \"$env:APPDATA\\top.jtmonster\\jhentai\" }"
+        ]
+    },
     "shortcuts": [
         [
             "jhentai.exe",
