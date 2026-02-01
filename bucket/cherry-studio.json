@@ -18,7 +18,7 @@
             "Expand-7zipArchive \"$dir\\temp\\`$PLUGINSDIR\\app-64.7z\" \"$dir\\\" -Removal",
             "Remove-Item \"$dir\\temp\" -Recurse",
             ". \"$bucketsdir\\apeiraco\\bin\\persist-utils.ps1\"",
-            "Set-PersistLinks -PersistDir $persist_dir -LinkMap @{ 'appdata' = \"$env:APPDATA\\CherryStudio\"; 'userdata' = \"$env:USERPROFILE\\.cherrystudio\" }"
+            "Set-PersistLinks -PersistDir $persist_dir -LinkMap @{ 'appdata' = '$env:APPDATA\\CherryStudio'; 'userdata' = '$env:USERPROFILE\\.cherrystudio' }"
         ]
     },
     "notes": "You'd better turn off update detection in Settings->About Us in Cherry Studio and use scoop to manage updates, otherwise it will cause some errors.",
@@ -32,7 +32,7 @@
     "uninstaller": {
         "script": [
             ". \"$bucketsdir\\apeiraco\\bin\\persist-utils.ps1\"",
-            "Remove-PersistLinks -PersistDir $persist_dir -LinkMap @{ 'appdata' = \"$env:APPDATA\\CherryStudio\"; 'userdata' = \"$env:USERPROFILE\\.cherrystudio\" }"
+            "Remove-PersistLinks -PersistDir $persist_dir -LinkMap @{ 'appdata' = '$env:APPDATA\\CherryStudio'; 'userdata' = '$env:USERPROFILE\\.cherrystudio' }"
         ]
     },
     "checkver": {
@@ -46,3 +46,4 @@
         }
     }
 }
+

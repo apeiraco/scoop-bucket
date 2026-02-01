@@ -127,6 +127,26 @@ Pull requests are welcome! Before submitting, please ensure:
 - The `architecture` field is mandatory unless the app only provides a 32-bit download
 - Use explicit `checkver` object syntax (e.g., `"checkver": { "github": "https://github.com/owner/repo" }`)
 - `license` should use object syntax with both `identifier` and `url` pointing to the upstream LICENSE file
+- For apps storing user data under `$env:APPDATA` / `$env:USERPROFILE`, prefer `bin/persist-utils.ps1` to make them portable; use single-quoted delayed expressions in `LinkMap` values
+
+### Minimal `persist-utils` Usage
+
+```json
+"installer": {
+  "script": [
+    ". \"$bucketsdir\\apeiraco\\bin\\persist-utils.ps1\"",
+    "Set-PersistLinks -PersistDir $persist_dir -LinkMap @{ 'appdata' = '$env:APPDATA\\Vendor\\App'; 'userdata' = '$env:USERPROFILE\\.vendor-app' }"
+  ]
+},
+"uninstaller": {
+  "script": [
+    ". \"$bucketsdir\\apeiraco\\bin\\persist-utils.ps1\"",
+    "Remove-PersistLinks -PersistDir $persist_dir -LinkMap @{ 'appdata' = '$env:APPDATA\\Vendor\\App'; 'userdata' = '$env:USERPROFILE\\.vendor-app' }"
+  ]
+}
+```
+
+The generated `restore-official-data.ps1` is location-portable (`$PSScriptRoot`) and evaluates `LinkMap` values at execution time.
 
 ### Common Installer Patterns
 

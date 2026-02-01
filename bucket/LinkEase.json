@@ -12,14 +12,14 @@
         "script": [
             "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse",
             ". \"$bucketsdir\\apeiraco\\bin\\persist-utils.ps1\"",
-            "Set-PersistLinks -PersistDir $persist_dir -LinkMap @{ 'userdata' = \"$env:USERPROFILE\\LinkEase\" }",
+            "Set-PersistLinks -PersistDir $persist_dir -LinkMap @{ 'userdata' = '$env:USERPROFILE\\LinkEase' }",
             "Set-FilesPresent -BaseDir \"$persist_dir\" -RelativePaths @('config.yaml','forwarder.yaml')"
         ]
     },
     "uninstaller": {
         "script": [
             ". \"$bucketsdir\\apeiraco\\bin\\persist-utils.ps1\"",
-            "Remove-PersistLinks -PersistDir $persist_dir -LinkMap @{ 'userdata' = \"$env:USERPROFILE\\LinkEase\" }"
+            "Remove-PersistLinks -PersistDir $persist_dir -LinkMap @{ 'userdata' = '$env:USERPROFILE\\LinkEase' }"
         ]
     },
     "shortcuts": [
@@ -44,3 +44,4 @@
         "url": "https://fw.koolcenter.com/binary/LinkEase/Client/LinkEaseSetup.exe#/dl.7z"
     }
 }
+

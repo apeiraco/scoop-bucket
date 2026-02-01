@@ -18,14 +18,14 @@
             "Remove-Item \"$dir/package\", \"$dir/bili_win-install.exe\" -Recurse -Force",
             "Set-Content -Value \"\" -Path \"$dir/resources/app-update.yml\"",
             ". \"$bucketsdir\\apeiraco\\bin\\persist-utils.ps1\"",
-            "Set-PersistLinks -PersistDir $persist_dir -LinkMap @{ 'appdata' = \"$env:APPDATA\\bilibili\" }"
+            "Set-PersistLinks -PersistDir $persist_dir -LinkMap @{ 'appdata' = '$env:APPDATA\\bilibili' }"
         ]
     },
     "pre_uninstall": "taskkill /F /IM 哔哩哔哩.exe",
     "uninstaller": {
         "script": [
             ". \"$bucketsdir\\apeiraco\\bin\\persist-utils.ps1\"",
-            "Remove-PersistLinks -PersistDir $persist_dir -LinkMap @{ 'appdata' = \"$env:APPDATA\\bilibili\" }"
+            "Remove-PersistLinks -PersistDir $persist_dir -LinkMap @{ 'appdata' = '$env:APPDATA\\bilibili' }"
         ]
     },
     "shortcuts": [
@@ -52,3 +52,4 @@
         }
     }
 }
+

@@ -126,6 +126,26 @@ scoop update *
 - 除非应用仅提供 32 位下载，否则必须声明 `architecture` 字段
 - `checkver` 必须使用显式对象语法（如 `"checkver": { "github": "https://github.com/owner/repo" }`）
 - `license` 应使用对象语法同时声明 `identifier` 和指向上游 LICENSE 文件的 `url`
+- 对于使用 `$env:APPDATA` / `$env:USERPROFILE` 存储用户数据的软件，优先使用 `bin/persist-utils.ps1` 将其 portable 化，并且 `LinkMap` 的 `Value` 必须使用单引号延迟求值
+
+### `persist-utils` 精简用法
+
+```json
+"installer": {
+  "script": [
+    ". \"$bucketsdir\\apeiraco\\bin\\persist-utils.ps1\"",
+    "Set-PersistLinks -PersistDir $persist_dir -LinkMap @{ 'appdata' = '$env:APPDATA\\Vendor\\App'; 'userdata' = '$env:USERPROFILE\\.vendor-app' }"
+  ]
+},
+"uninstaller": {
+  "script": [
+    ". \"$bucketsdir\\apeiraco\\bin\\persist-utils.ps1\"",
+    "Remove-PersistLinks -PersistDir $persist_dir -LinkMap @{ 'appdata' = '$env:APPDATA\\Vendor\\App'; 'userdata' = '$env:USERPROFILE\\.vendor-app' }"
+  ]
+}
+```
+
+生成的 `restore-official-data.ps1` 已支持基于 `$PSScriptRoot` 的相对定位，并在执行时求值 `LinkMap` 的路径表达式。
 
 ### 常见安装包处理模式
 

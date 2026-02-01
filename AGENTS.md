@@ -29,6 +29,19 @@ _Single source of truth for Agent identity, code standards, and project rules. S
   1. Download and extract the installer/archive locally into `temp/` to inspect the actual file tree
   2. Read the upstream repository's README, docs, and source code for hints
   3. Form a hypothesis, then verify against the extracted contents
+- For apps storing user data under `$env:APPDATA` / `$env:USERPROFILE`, prefer `bin/persist-utils.ps1` to make them portable.
+- In `LinkMap`, values MUST be single-quoted delayed expressions (for example: `'appdata' = '$env:APPDATA\Vendor\App'`) so restore scripts can evaluate paths at execution time.
+
+Minimal example:
+
+```json
+"installer": {
+  "script": [
+    ". \"$bucketsdir\\apeiraco\\bin\\persist-utils.ps1\"",
+    "Set-PersistLinks -PersistDir $persist_dir -LinkMap @{ 'appdata' = '$env:APPDATA\\Vendor\\App' }"
+  ]
+}
+```
 
 **Common Installer Patterns:**
 
