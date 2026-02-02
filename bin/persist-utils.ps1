@@ -11,20 +11,46 @@ Function Resolve-LinkPathExpression {
     return $ExecutionContext.InvokeCommand.ExpandString($PathExpression)
 }
 
+Function Write-PortableLog {
+    param(
+        [string]$Message,
+        [ConsoleColor]$Color = [ConsoleColor]::Cyan,
+        [switch]$LeadingNewline
+    )
+    if ($LeadingNewline) {
+        Write-Host ''
+    }
+    Write-Host "[Portable Mode] $Message" -ForegroundColor $Color
+}
+
 Function Set-PersistLinks {
     param(
         [string]$PersistDir,
-        [hashtable]$LinkMap
+        [hashtable]$LinkMap,
+        [bool]$Verbose = $true
     )
     foreach ($entry in $LinkMap.GetEnumerator()) {
         $resolvedPath = Resolve-LinkPathExpression -PathExpression ([string]$entry.Value)
-        Set-FolderLink -TargetDir "$PersistDir\$($entry.Key)" -JunctionDir $resolvedPath
+        $targetDir = "$PersistDir\$($entry.Key)"
+        Set-FolderLink -TargetDir $targetDir -JunctionDir $resolvedPath -Verbose:$Verbose
     }
 
     # Generate restore script for migrating back to official (non-portable) layout
     $lines = @(
         '# Restore persist data back to original directories.'
         '# Run this AFTER scoop uninstall to migrate from portable back to official install.'
+        ''
+        'function Write-RestoreLog {'
+        '    param('
+        '        [string]$Message,'
+        '        [ConsoleColor]$Color = [ConsoleColor]::Cyan,'
+        '        [switch]$LeadingNewline'
+        '    )'
+        '    if ($LeadingNewline) {'
+        '        Write-Host ""'
+        '    }'
+        '    Write-Host "[Portable Mode] $Message" -ForegroundColor $Color'
+        '}'
         ''
         '$linkMap = @{'
     )
@@ -40,25 +66,34 @@ Function Set-PersistLinks {
     $lines += '    $dst = $ExecutionContext.InvokeCommand.ExpandString($entry.Value)'
     $lines += '    $parent = Split-Path $dst -Parent'
     $lines += '    if (Test-Path $src) {'
+    $lines += '        Write-RestoreLog -LeadingNewline -Message "Copy user data ''$src'' -> ''$dst''."'
     $lines += '        if (-not (Test-Path $parent)) { New-Item -Path $parent -ItemType Directory -Force | Out-Null }'
     $lines += '        Copy-Item -Path $src -Destination $dst -Recurse -Force'
+    $lines += '    } else {'
+    $lines += '        Write-RestoreLog -LeadingNewline -Color DarkGray -Message "Skip ''$src'' (not found)."'
     $lines += '    }'
     $lines += '}'
-    Set-Content -Path "$PersistDir\restore-official-data.ps1" -Value ($lines -join "`r`n") -Encoding UTF8
+    $restoreScriptPath = "$PersistDir\restore-official-data.ps1"
+    Set-Content -Path $restoreScriptPath -Value ($lines -join "`r`n") -Encoding UTF8
+    if ($Verbose) {
+        Write-PortableLog -LeadingNewline -Message "Create restore script: '$restoreScriptPath'."
+    }
 }
 
 # Remove-PersistLinks: batch-remove folder links and remind user about the restore script.
 Function Remove-PersistLinks {
     param(
         [string]$PersistDir,
-        [hashtable]$LinkMap
+        [hashtable]$LinkMap,
+        [bool]$Verbose = $true
     )
     foreach ($entry in $LinkMap.GetEnumerator()) {
         $resolvedPath = Resolve-LinkPathExpression -PathExpression ([string]$entry.Value)
-        Remove-FolderLink -JunctionDir $resolvedPath -TargetDir "$PersistDir\$($entry.Key)"
+        $targetDir = "$PersistDir\$($entry.Key)"
+        Remove-FolderLink -JunctionDir $resolvedPath -TargetDir $targetDir -Verbose:$Verbose
     }
     if (Test-Path "$PersistDir\restore-official-data.ps1") {
-        Write-Host "To restore data back to original directories, run:" -ForegroundColor Yellow
-        Write-Host "  powershell -File `"$PersistDir\restore-official-data.ps1`"" -ForegroundColor Cyan
+        Write-PortableLog -LeadingNewline -Color Yellow -Message "To restore user data back to original directories, run:"
+        Write-PortableLog -Color Cyan -Message "powershell -File `"$PersistDir\restore-official-data.ps1`""
     }
 }
