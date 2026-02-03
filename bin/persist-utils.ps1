@@ -26,6 +26,9 @@ Function Set-PersistLinks {
         [hashtable]$LinkMap,
         [bool]$Verbose = $true
     )
+    if ($Verbose) {
+        Write-Host ""
+    }
     foreach ($entry in $LinkMap.GetEnumerator()) {
         $resolvedPath = Resolve-LinkPathExpression -PathExpression ([string]$entry.Value)
         $targetDir = "$PersistDir\$($entry.Key)"
@@ -81,6 +84,9 @@ Function Remove-PersistLinks {
         [hashtable]$LinkMap,
         [bool]$Verbose = $true
     )
+    if ($Verbose) {
+        Write-Host ""
+    }
     foreach ($entry in $LinkMap.GetEnumerator()) {
         $resolvedPath = Resolve-LinkPathExpression -PathExpression ([string]$entry.Value)
         $targetDir = "$PersistDir\$($entry.Key)"
