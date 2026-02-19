@@ -17,10 +17,7 @@ Function Write-PortableLog {
         [ConsoleColor]$Color = [ConsoleColor]::Cyan,
         [switch]$LeadingNewline
     )
-    if ($LeadingNewline) {
-        Write-Host ''
-    }
-    Write-Host "[Portable Mode] $Message" -ForegroundColor $Color
+    Write-Host "[Portable Mode] $Message"
 }
 
 Function Set-PersistLinks {
@@ -46,10 +43,7 @@ Function Set-PersistLinks {
         '        [ConsoleColor]$Color = [ConsoleColor]::Cyan,'
         '        [switch]$LeadingNewline'
         '    )'
-        '    if ($LeadingNewline) {'
-        '        Write-Host ""'
-        '    }'
-        '    Write-Host "[Portable Mode] $Message" -ForegroundColor $Color'
+        '    Write-Host "[Portable Mode] $Message"'
         '}'
         ''
         '$linkMap = @{'
@@ -66,17 +60,17 @@ Function Set-PersistLinks {
     $lines += '    $dst = $ExecutionContext.InvokeCommand.ExpandString($entry.Value)'
     $lines += '    $parent = Split-Path $dst -Parent'
     $lines += '    if (Test-Path $src) {'
-    $lines += '        Write-RestoreLog -LeadingNewline -Message "Copy user data ''$src'' -> ''$dst''."'
+    $lines += '        Write-RestoreLog -Message "Copy user data ''$src'' -> ''$dst''."'
     $lines += '        if (-not (Test-Path $parent)) { New-Item -Path $parent -ItemType Directory -Force | Out-Null }'
     $lines += '        Copy-Item -Path $src -Destination $dst -Recurse -Force'
     $lines += '    } else {'
-    $lines += '        Write-RestoreLog -LeadingNewline -Color DarkGray -Message "Skip ''$src'' (not found)."'
+    $lines += '        Write-RestoreLog -Message "Skip ''$src'' (not found)."'
     $lines += '    }'
     $lines += '}'
     $restoreScriptPath = "$PersistDir\restore-official-data.ps1"
     Set-Content -Path $restoreScriptPath -Value ($lines -join "`r`n") -Encoding UTF8
     if ($Verbose) {
-        Write-PortableLog -LeadingNewline -Message "Create restore script: '$restoreScriptPath'."
+        Write-PortableLog -Message "Create restore script: '$restoreScriptPath'."
     }
 }
 
@@ -93,7 +87,7 @@ Function Remove-PersistLinks {
         Remove-FolderLink -JunctionDir $resolvedPath -TargetDir $targetDir -Verbose:$Verbose
     }
     if (Test-Path "$PersistDir\restore-official-data.ps1") {
-        Write-PortableLog -LeadingNewline -Color Yellow -Message "To restore user data back to original directories, run:"
-        Write-PortableLog -Color Cyan -Message "powershell -File `"$PersistDir\restore-official-data.ps1`""
+        Write-PortableLog -Message "To restore user data back to original directories, run:"
+        Write-PortableLog -Message "powershell -File `"$PersistDir\restore-official-data.ps1`""
     }
 }

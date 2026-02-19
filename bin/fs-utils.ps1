@@ -5,13 +5,12 @@ Function Set-FolderLink {
         [bool]$Verbose = $false
     )
     if ($Verbose) {
-        Write-Host ''
-        Write-Host "[Portable Mode] Prepare link '$JunctionDir' -> '$TargetDir'." -ForegroundColor Cyan
+        Write-Host "[Portable Mode] Prepare link '$JunctionDir' -> '$TargetDir'."
     }
     if (-not (Test-Path $TargetDir)) {
         New-Item -Path $TargetDir -ItemType Directory -Force | Out-Null
         if ($Verbose) {
-            Write-Host "[Portable Mode] Created persist directory '$TargetDir'." -ForegroundColor DarkGray
+            Write-Host "[Portable Mode] Created persist directory '$TargetDir'."
         }
     }
     $linkType = (Get-Item -Path $JunctionDir -ErrorAction SilentlyContinue).LinkType
@@ -20,17 +19,17 @@ Function Set-FolderLink {
             # if target equals to $TargetDir, skip to remove
             if ((Get-Item -Path $JunctionDir).Target -eq $TargetDir) {
                 if ($Verbose) {
-                    Write-Host "[Portable Mode] Skip '$JunctionDir' (already linked)." -ForegroundColor DarkGray
+                    Write-Host "[Portable Mode] Skip '$JunctionDir' (already linked)."
                 }
                 return
             }
             if ($Verbose) {
-                Write-Host "[Portable Mode] Replace existing link '$JunctionDir'." -ForegroundColor Yellow
+                Write-Host "[Portable Mode] Replace existing link '$JunctionDir'."
             }
             Remove-Item -Path $JunctionDir -Force
         } else {
             if ($Verbose) {
-                Write-Host "[Portable Mode] Move user data '$JunctionDir' -> '$TargetDir'." -ForegroundColor Yellow
+                Write-Host "[Portable Mode] Move user data '$JunctionDir' -> '$TargetDir'."
             }
             Get-ChildItem -Path $JunctionDir -Force | Move-Item -Destination $TargetDir -Force
             Remove-Item -Path $JunctionDir -Force -Recurse
@@ -40,18 +39,18 @@ Function Set-FolderLink {
     if (-not (Test-Path $ParentDir)) {
         New-Item -Path $ParentDir -ItemType Directory -Force | Out-Null
         if ($Verbose) {
-            Write-Host "[Portable Mode] Created parent directory '$ParentDir'." -ForegroundColor DarkGray
+            Write-Host "[Portable Mode] Created parent directory '$ParentDir'."
         }
     }
     try {
         New-Item "$JunctionDir" -ItemType Junction -Target "$TargetDir" -ErrorAction Stop | Out-Null
         if ($Verbose) {
-            Write-Host "[Portable Mode] Created junction '$JunctionDir' -> '$TargetDir'." -ForegroundColor Green
+            Write-Host "[Portable Mode] Created junction '$JunctionDir' -> '$TargetDir'."
         }
     } catch {
         New-Item "$JunctionDir" -ItemType SymbolicLink -Target "$TargetDir" -ErrorAction Stop | Out-Null
         if ($Verbose) {
-            Write-Host "[Portable Mode] Created symbolic link '$JunctionDir' -> '$TargetDir'." -ForegroundColor Green
+            Write-Host "[Portable Mode] Created symbolic link '$JunctionDir' -> '$TargetDir'."
         }
     }
 }
@@ -63,8 +62,7 @@ Function Remove-FolderLink {
         [bool]$Verbose = $false
     )
     if ($Verbose) {
-        Write-Host ''
-        Write-Host "[Portable Mode] Check link '$JunctionDir' -> '$TargetDir'." -ForegroundColor Cyan
+        Write-Host "[Portable Mode] Check link '$JunctionDir' -> '$TargetDir'."
     }
     $linkType = (Get-Item -Path $JunctionDir -ErrorAction SilentlyContinue).LinkType
     if (Test-Path $JunctionDir) {
@@ -73,16 +71,16 @@ Function Remove-FolderLink {
             if ((Get-Item -Path $JunctionDir).Target -eq $TargetDir) {
                 Remove-Item -Path $JunctionDir -Force
                 if ($Verbose) {
-                    Write-Host "[Portable Mode] Removed link '$JunctionDir'." -ForegroundColor Green
+                    Write-Host "[Portable Mode] Removed link '$JunctionDir'."
                 }
             } elseif ($Verbose) {
-                Write-Host "[Portable Mode] Skip '$JunctionDir' (target mismatch)." -ForegroundColor DarkGray
+                Write-Host "[Portable Mode] Skip '$JunctionDir' (target mismatch)."
             }
         } elseif ($Verbose) {
-            Write-Host "[Portable Mode] Skip '$JunctionDir' (not a link)." -ForegroundColor DarkGray
+            Write-Host "[Portable Mode] Skip '$JunctionDir' (not a link)."
         }
     } elseif ($Verbose) {
-        Write-Host "[Portable Mode] Skip '$JunctionDir' (path not found)." -ForegroundColor DarkGray
+        Write-Host "[Portable Mode] Skip '$JunctionDir' (path not found)."
     }
 }
 
