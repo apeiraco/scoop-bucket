@@ -1,5 +1,5 @@
 {
-    "version": "4.14",
+    "version": "4.15",
     "description": "A fast distributed storage system for blobs, objects, files, and data lake.",
     "homepage": "https://github.com/seaweedfs/seaweedfs",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/seaweedfs/seaweedfs/releases/download/4.14/windows_amd64.zip",
-            "hash": "2b424b49c94d134ae245cfadb285adc1e59e70c12321e37d0890e212172b26d9"
+            "url": "https://github.com/seaweedfs/seaweedfs/releases/download/4.15/windows_amd64.zip",
+            "hash": "0a49231922c4b2f4fd60ee213345988962d80cb0794efeb0c0008516d99eeab0"
         }
     },
     "bin": "weed.exe",
