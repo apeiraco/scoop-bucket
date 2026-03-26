@@ -1,5 +1,5 @@
 {
-    "version": "1.17.5",
+    "version": "1.17.6",
     "license": {
         "identifier": "Proprietary",
         "url": "https://www.bilibili.com/protocal/licence.html"
@@ -7,8 +7,8 @@
     "notes": "In Application Auto update has been disable",
     "architecture": {
         "64bit": {
-            "url": "https://dl.hdslb.com/mobile/fixed/bili_win/bili_win-install.exe?v=1.17.5#/bili_win-install.exe",
-            "hash": "9b448a1f83cf01bfc58b58dc73aa441cc99505eb0d422743e07e290f88da0e71"
+            "url": "https://dl.hdslb.com/mobile/fixed/bili_win/bili_win-install.exe?v=1.17.6#/bili_win-install.exe",
+            "hash": "f0a448040b50b374dd32a7802c32fde90b1c228cccaef65ffcba0463cabf79ca"
         }
     },
     "installer": {
@@ -52,4 +52,3 @@
         }
     }
 }
-
