@@ -20,7 +20,7 @@
     "installer": {
         "script": [
             ". \"$bucketsdir\\apeiraco\\bin\\persist-utils.ps1\"",
-            "Set-PersistLinks -PersistDir $persist_dir -LinkMap @{ 'appdata' = '$env:APPDATA\top.jtmonster\\jhentai' }"
+            "Set-PersistLinks -PersistDir $persist_dir -LinkMap @{ 'appdata' = '$env:APPDATA\\top.jtmonster\\jhentai' }"
         ]
     },
     "uninstaller": {
