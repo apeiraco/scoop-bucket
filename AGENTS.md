@@ -1,6 +1,6 @@
 # AGENTS.md
 
-_Single source of truth for Agent identity, code standards, and project rules. Symbolically linked by `.cursorrules`, `CLAUDE.md`, and `GEMINI.md`._
+_Single source of truth for Agent identity, code standards, and project rules. Symbolically linked by `.cursorrules`, `CLAUDE.md`, and `GEMINI.md`. When need be edit, only edit `AGENTS.md`_
 
 ## Identity
 
