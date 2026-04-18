@@ -18,6 +18,7 @@ Curating practical tools that mainstream buckets overlook — developer utilitie
 | App                                                       | Description                                                               |
 | --------------------------------------------------------- | ------------------------------------------------------------------------- |
 | **[fresh](https://github.com/sinelaw/fresh)**             | A terminal text editor you can just use                                   |
+| **[rebased](https://github.com/DetachHead/rebased)**      | An open-source remake of the short-lived jetbrains git client             |
 | **[ut](https://github.com/ksdme/ut)**                     | A fast, lightweight CLI utility toolkit                                   |
 | **[wsl-dashboard](https://github.com/owu/wsl-dashboard)** | Native GUI for managing WSL instances (distros, networking, USB, and more) |
 | **[seaweedfs](https://github.com/seaweedfs/seaweedfs)**   | Fast distributed storage system for blobs, objects & files                |
