@@ -70,6 +70,7 @@ Curating practical tools that mainstream buckets overlook — developer utilitie
 | App                                                                                  | Description                                                                       |
 | ------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------- |
 | **[cherry-studio](https://cherry-ai.com/)**                                          | Desktop client that supports multiple LLM providers                               |
+| **[cockpit-tools](https://github.com/jlcodes99/cockpit-tools)**                      | Universal AI IDE account manager with multi-account switching and quota monitoring |
 | **[llama.cpp](https://github.com/ggml-org/llama.cpp)**                               | Inference of LLaMA model in pure C/C++ (cpu/cuda/hip/opencl/vulkan/sycl variants) |
 | **[LMStudio](https://lmstudio.ai/)**                                                | Discover, download, and run local LLMs                                            |
 | **[Sakura-Launcher-GUI](https://github.com/PiDanShouRouZhouXD/Sakura_Launcher_GUI)** | A GUI Launcher for Sakura LLM                                                     |

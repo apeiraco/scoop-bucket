@@ -68,6 +68,7 @@
 | 软件                                                                                 | 描述                                                                   |
 | ------------------------------------------------------------------------------------ | ---------------------------------------------------------------------- |
 | **[cherry-studio](https://cherry-ai.com/)**                                          | 支持多种 LLM 供应商的桌面客户端                                        |
+| **[cockpit-tools](https://github.com/jlcodes99/cockpit-tools)**                      | 通用 AI IDE 账号管理工具，支持多账号切换、配额监控与多开实例管理        |
 | **[llama.cpp](https://github.com/ggml-org/llama.cpp)**                               | 纯 C/C++ 实现的 LLaMA 推理工具（cpu/cuda/hip/opencl/vulkan/sycl 变体） |
 | **[LMStudio](https://lmstudio.ai/)**                                                | 本地大语言模型发现、下载与运行工具                                     |
 | **[Sakura-Launcher-GUI](https://github.com/PiDanShouRouZhouXD/Sakura_Launcher_GUI)** | SakuraLLM 的图形化启动器                                               |
