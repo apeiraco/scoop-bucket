@@ -31,6 +31,10 @@ _Single source of truth for Agent identity, code standards, and project rules. S
   3. Form a hypothesis, then verify against the extracted contents
 - For apps storing user data under `$env:APPDATA` / `$env:USERPROFILE`, prefer `bin/persist-utils.ps1` to make them portable.
 - In `LinkMap`, values MUST be single-quoted delayed expressions (for example: `'appdata' = '$env:APPDATA\Vendor\App'`) so restore scripts can evaluate paths at execution time.
+- Static docs site content lives under `docs/` and is built independently from Scoop bucket maintenance workflows.
+- Docs toolchain setup lives in `mise.toml`; `justfile` and GitHub Pages workflows should invoke Node tooling through `mise`, not `corepack`.
+- When `docs/` needs to surface existing repository documents or assets, use git-tracked symlinks instead of copying files.
+- If docs depend on root files such as `README.md`, `README_CN.md`, `LICENSE`, `AGENTS.md`, or `justfile`, keep the Pages workflow path filters aligned with those source files.
 
 Minimal example:
 

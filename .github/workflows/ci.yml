@@ -3,9 +3,21 @@ name: Tests
 on:
   push:
     branches:
-      - 'main'
-      - 'master'
+      - "main"
+      - "master"
+    paths:
+      - "bucket/**"
+      - "deprecated/**"
+      - "bin/**"
+      - "Scoop-Bucket.Tests.ps1"
+      - ".github/workflows/ci.yml"
   pull_request:
+    paths:
+      - "bucket/**"
+      - "deprecated/**"
+      - "bin/**"
+      - "Scoop-Bucket.Tests.ps1"
+      - ".github/workflows/ci.yml"
   workflow_dispatch:
 
 jobs:
