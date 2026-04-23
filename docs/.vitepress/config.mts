@@ -1,12 +1,9 @@
 import { defineConfig } from 'vitepress'
 
-const repository = process.env.GITHUB_REPOSITORY?.split('/')[1]
-const base = process.env.GITHUB_ACTIONS && repository ? `/${repository}/` : '/'
-
 export default defineConfig({
   title: 'Apeiraco Scoop-Bucket',
   description: 'Static documentation site for Apeiraco Scoop-Bucket.',
-  base,
+  base: '/',
   cleanUrls: true,
   ignoreDeadLinks: true,
   vite: {

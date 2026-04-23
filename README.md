@@ -4,12 +4,16 @@
 
 Curating practical tools that mainstream buckets overlook — developer utilities, geek essentials, ACGN apps, and more.
 
-[![Excavator](https://github.com/apeiraco/scoop-bucket/actions/workflows/excavator.yml/badge.svg)](https://github.com/apeiraco/scoop-bucket/actions/workflows/excavator.yml)
-[![License](https://img.shields.io/badge/license-Unlicense-blue)](LICENSE)
+<p class="badges">
+  <a href="https://github.com/apeiraco/scoop-bucket/actions/workflows/excavator.yml"><img src="https://github.com/apeiraco/scoop-bucket/actions/workflows/excavator.yml/badge.svg" alt="Excavator"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-Unlicense-blue" alt="License"></a>
+</p>
+
+<div class="github-only">
 
 **[🇨🇳 简体中文](README_CN.md)**
 
----
+</div>
 
 ## 📦 App Catalog
 

@@ -4,12 +4,16 @@
 
 精选主流 bucket 忽略的实用工具——开发者工具、极客利器、ACGN 应用等。
 
-[![Excavator](https://github.com/apeiraco/scoop-bucket/actions/workflows/excavator.yml/badge.svg)](https://github.com/apeiraco/scoop-bucket/actions/workflows/excavator.yml)
-[![License](https://img.shields.io/badge/license-Unlicense-blue)](LICENSE)
+<p class="badges">
+  <a href="https://github.com/apeiraco/scoop-bucket/actions/workflows/excavator.yml"><img src="https://github.com/apeiraco/scoop-bucket/actions/workflows/excavator.yml/badge.svg" alt="Excavator"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-Unlicense-blue" alt="License"></a>
+</p>
+
+<div class="github-only">
 
 **[🇬🇧 English](README.md)**
 
----
+</div>
 
 ## 📦 软件目录
 

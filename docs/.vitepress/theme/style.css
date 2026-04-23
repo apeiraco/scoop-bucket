@@ -1,0 +1,26 @@
+.github-only {
+  display: none !important;
+}
+
+.badges {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.badges a {
+  display: flex;
+}
+
+.vp-doc hr {
+  margin: 24px 0;
+  border: 0;
+  border-top: 1px solid var(--vp-c-divider);
+}
+
+.vp-doc hr + h2 {
+  margin-top: 32px;
+  padding-top: 0;
+  border-top: 0;
+}
