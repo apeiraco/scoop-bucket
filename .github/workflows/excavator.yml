@@ -2,14 +2,21 @@ on:
   workflow_dispatch:
   schedule:
     # run every 4 hours
-    - cron: '20 */4 * * *'
+    - cron: "20 */4 * * *"
 name: Excavator
 jobs:
   excavate:
     name: Excavate
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@main
+      - uses: actions/checkout@v6
+        with:
+          sparse-checkout: |
+            bucket
+            deprecated
+            bin
+            Scoop-Bucket.Tests.ps1
+          sparse-checkout-cone-mode: false
       - name: Excavate
         uses: ScoopInstaller/GithubActions@main
         env:

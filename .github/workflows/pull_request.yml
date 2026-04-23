@@ -1,13 +1,20 @@
 on:
   pull_request_target:
-    types: [opened]
+    types: [ opened ]
 name: Pull Requests
 jobs:
   pullRequestHandler:
     name: PullRequestHandler
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@main
+      - uses: actions/checkout@v6
+        with:
+          sparse-checkout: |
+            bucket
+            deprecated
+            bin
+            Scoop-Bucket.Tests.ps1
+          sparse-checkout-cone-mode: false
       - name: PullRequestHandler
         uses: ScoopInstaller/GithubActions@main
         env:

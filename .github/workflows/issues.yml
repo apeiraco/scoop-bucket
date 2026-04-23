@@ -1,15 +1,23 @@
 on:
   issues:
-    types: [opened, labeled]
+    types: [ opened, labeled ]
 name: Issues
 jobs:
   issueHandler:
     name: IssueHandler
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@main
+      - uses: actions/checkout@v6
+        with:
+          sparse-checkout: |
+            bucket
+            deprecated
+            bin
+            Scoop-Bucket.Tests.ps1
+          sparse-checkout-cone-mode: false
       - name: IssueHandler
         uses: ScoopInstaller/GithubActions@main
-        if: github.event.action == 'opened' || (github.event.action == 'labeled' && contains(github.event.issue.labels.*.name, 'verify'))
+        if: github.event.action == 'opened' || (github.event.action == 'labeled' &&
+          contains(github.event.issue.labels.*.name, 'verify'))
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

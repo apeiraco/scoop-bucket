@@ -26,12 +26,18 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Checkout Bucket
-        uses: actions/checkout@main
+        uses: actions/checkout@v6
         with:
           fetch-depth: 2
           path: my_bucket
+          sparse-checkout: |
+            bucket
+            deprecated
+            bin
+            Scoop-Bucket.Tests.ps1
+          sparse-checkout-cone-mode: false
       - name: Checkout Scoop
-        uses: actions/checkout@main
+        uses: actions/checkout@v6
         with:
           repository: ScoopInstaller/Scoop
           path: scoop_core
@@ -50,12 +56,18 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Checkout Bucket
-        uses: actions/checkout@main
+        uses: actions/checkout@v6
         with:
           fetch-depth: 2
           path: my_bucket
+          sparse-checkout: |
+            bucket
+            deprecated
+            bin
+            Scoop-Bucket.Tests.ps1
+          sparse-checkout-cone-mode: false
       - name: Checkout Scoop
-        uses: actions/checkout@main
+        uses: actions/checkout@v6
         with:
           repository: ScoopInstaller/Scoop
           path: scoop_core
