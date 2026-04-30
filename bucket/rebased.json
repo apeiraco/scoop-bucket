@@ -1,5 +1,5 @@
 {
-    "version": "1.0.10",
+    "version": "1.0.11",
     "description": "An open-source remake of the short-lived jetbrains git client",
     "homepage": "https://github.com/DetachHead/rebased",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/DetachHead/rebased/releases/download/1.0.10/rebased.exe#/dl.7z",
-            "hash": "f8a2f4ac0bac2b446283fe1b0f19957df605d1e8f1b7949cfa56a308e7d035ef"
+            "url": "https://github.com/DetachHead/rebased/releases/download/1.0.11/rebased.exe#/dl.7z",
+            "hash": "2fce88d55f562a0000d6a283b62bdbe473c28e3abe9ecf62a6bae7f29c94fad9"
         }
     },
     "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse -ErrorAction SilentlyContinue",
