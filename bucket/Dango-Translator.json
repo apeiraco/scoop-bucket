@@ -1,5 +1,5 @@
 {
-    "version": "6.1.5",
+    "version": "6.2.1",
     "description": "An OCR-based screen translation tool supporting multiple translation engines.",
     "homepage": "https://github.com/PantsuDango/Dango-Translator",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/PantsuDango/Dango-Translator/releases/download/Ver6.1.5/DangoTranslator-v6.1.5-all.zip",
-            "hash": "5EB8D4224D54938183A11216D817A7117A1E40BD0F9C91072BCC28B2436DFD1B"
+            "url": "https://github.com/PantsuDango/Dango-Translator/releases/download/Ver6.2.1/DangoTranslator-v6.2.1-all.zip",
+            "hash": "72a55782e7f8ce572b9b5bb6cf32ef6e715dd97d402da2ad3cb5f83fba031822"
         }
     },
     "shortcuts": [
