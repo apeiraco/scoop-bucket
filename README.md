@@ -58,7 +58,7 @@ Curating practical tools that mainstream buckets overlook — developer utilitie
 | **[LunaTranslator](https://github.com/HIllya51/LunaTranslator)**           | A Visual Novel translation tool, with HOOK / OCR / clipboard support              |
 | **[MTool](https://mtool.app/)**                                            | A game translation and modding tool with free and paid tiers                      |
 | **[Watt-Toolkit](https://github.com/BeyondDimension/SteamTools)**          | Open-source Steam multifunctional toolbox (Steam++)                               |
-| **[Wemod-Patcher](https://github.com/k1tbyte/Wemod-Patcher)**              | Unlock WeMod Pro features for free                                                |
+| **[Wand-Enhancer](https://github.com/k1tbyte/Wand-Enhancer)**              | Unlock WeMod Pro features for free                                                |
 
 ### 🏠 Life Tools
 

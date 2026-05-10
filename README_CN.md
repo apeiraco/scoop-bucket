@@ -56,7 +56,7 @@
 | **[LunaTranslator](https://github.com/HIllya51/LunaTranslator)**           | 强大的 Galgame 翻译工具，支持 Hook/OCR/剪贴板等多种翻译方式          |
 | **[MTool](https://mtool.app/)**                                            | 游戏翻译与修改工具，提供免费基础功能与付费高级功能                   |
 | **[Watt-Toolkit](https://github.com/BeyondDimension/SteamTools)**          | Steam++ 开源多功能工具箱                                             |
-| **[Wemod-Patcher](https://github.com/k1tbyte/Wemod-Patcher)**              | WeMod Pro 功能解锁补丁                                               |
+| **[Wand-Enhancer](https://github.com/k1tbyte/Wand-Enhancer)**              | WeMod Pro 功能解锁补丁                                               |
 
 ### 🏠 生活工具
 
