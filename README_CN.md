@@ -54,6 +54,7 @@
 | **[JHenTai](https://github.com/jiangtian616/JHenTai)**                     | E-Hentai / ExHentai 跨平台漫画阅读器                                 |
 | **[LinguaGacha](https://github.com/neavo/LinguaGacha)**                    | AI 驱动的次世代文本翻译器，支持小说、游戏、字幕内容翻译              |
 | **[LunaTranslator](https://github.com/HIllya51/LunaTranslator)**           | 强大的 Galgame 翻译工具，支持 Hook/OCR/剪贴板等多种翻译方式          |
+| **[moonlight-web](https://github.com/linckosz/moonlight-web)**              | Stream your gaming PC to any device with a browser                               |
 | **[MTool](https://mtool.app/)**                                            | 游戏翻译与修改工具，提供免费基础功能与付费高级功能                   |
 | **[Watt-Toolkit](https://github.com/BeyondDimension/SteamTools)**          | Steam++ 开源多功能工具箱                                             |
 | **[Wand-Enhancer](https://github.com/k1tbyte/Wand-Enhancer)**              | 本地 Wand 客户端互操作工具，安装时从源码构建                              |

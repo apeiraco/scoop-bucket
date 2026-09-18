@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-11-03
+
+### Added
+
+- Add moonlight-web tool.
+
+### Fixed
+
+- Fixed Wand Enhancer source build.
+
 ## 2026-07-28
 
 ### Changed

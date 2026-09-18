@@ -56,6 +56,7 @@ Curating practical tools that mainstream buckets overlook — developer utilitie
 | **[JHenTai](https://github.com/jiangtian616/JHenTai)**                     | Cross-platform manga reader for E-Hentai & ExHentai                               |
 | **[LinguaGacha](https://github.com/neavo/LinguaGacha)**                    | An AI-powered next-generation translator for novels, games, and subtitles         |
 | **[LunaTranslator](https://github.com/HIllya51/LunaTranslator)**           | A Visual Novel translation tool, with HOOK / OCR / clipboard support              |
+| **[moonlight-web](https://github.com/linckosz/moonlight-web)**              | Stream your gaming PC to any device with a browser                               |
 | **[MTool](https://mtool.app/)**                                            | A game translation and modding tool with free and paid tiers                      |
 | **[Watt-Toolkit](https://github.com/BeyondDimension/SteamTools)**          | Open-source Steam multifunctional toolbox (Steam++)                               |
 | **[Wand-Enhancer](https://github.com/k1tbyte/Wand-Enhancer)**              | Local Wand client interoperability tool, built from source during installation    |
