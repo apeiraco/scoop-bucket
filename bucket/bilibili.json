@@ -1,5 +1,5 @@
 {
-    "version": "1.18.0",
+    "version": "1.19.0",
     "license": {
         "identifier": "Proprietary",
         "url": "https://www.bilibili.com/protocal/licence.html"
@@ -7,8 +7,8 @@
     "notes": "In Application Auto update has been disable",
     "architecture": {
         "64bit": {
-            "url": "https://dl.hdslb.com/mobile/fixed/bili_win/bili_win-install.exe?v=1.18.0#/bili_win-install.exe",
-            "hash": "142b277165278bdaf22ed965460e84ca13d733b4793497d129952382663e0af5"
+            "url": "https://dl.hdslb.com/mobile/fixed/bili_win/bili_win-install.exe?v=1.19.0#/bili_win-install.exe",
+            "hash": "436aba2dd9d6d3d77019121b76d1b72ce285cd6515ec2c35b79c0c409d460c04"
         }
     },
     "installer": {
