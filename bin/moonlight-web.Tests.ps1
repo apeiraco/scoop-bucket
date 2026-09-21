@@ -11,11 +11,13 @@ BeforeAll {
 }
 
 Describe 'MoonlightWeb native installation lifecycle' {
-    It 'detaches the native junction during updates without deleting the native installation' {
+    It 'detaches the native junction during updates without prompting or deleting the native installation' {
         $dir = Join-Path $TestDrive 'update'
         $target = Join-Path $TestDrive 'protected-install'
         New-Item -Path $dir, $target -ItemType Directory -Force | Out-Null
         Set-Content -LiteralPath "$target\keep.txt" -Value 'native installation'
+        New-Item -Path "$target\assets" -ItemType Directory | Out-Null
+        Set-Content -LiteralPath "$target\assets\keep.txt" -Value 'native assets'
         New-Item -Path "$dir\native" -ItemType Junction -Target $target | Out-Null
         $cmd = 'update'
 
@@ -23,6 +25,7 @@ Describe 'MoonlightWeb native installation lifecycle' {
 
         Test-Path -LiteralPath "$dir\native" | Should -BeFalse
         Get-Content -LiteralPath "$target\keep.txt" | Should -Be 'native installation'
+        Get-Content -LiteralPath "$target\assets\keep.txt" | Should -Be 'native assets'
     }
 
     It 'refuses to delete a regular directory in place of the native junction' {

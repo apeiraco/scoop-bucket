@@ -61,6 +61,8 @@
 
 **构建警告：** Wand Enhancer 上游有意不发布预编译可执行文件。安装过程将在本机从对应标签的源码构建，使用 PATH 中由 Scoop、WinGet 或独立二进制方式安装的 mise 配置 Node.js、pnpm 和 CMake，并要求 Visual Studio C++ 构建工具、MSBuild 与 .NET Framework 4.8 Targeting Pack。
 
+**MoonlightWeb / WSL:** Mirrored networking can reserve a port pool overlapping TCP `48001` and UDP `48550–48573`, causing signaling failure even after the virtual display activates successfully. Check `wsl --exec cat /proc/sys/net/ipv4/ip_local_port_range`. To keep mirrored mode, stop WSL (including its containers), hold MoonlightWeb's required ports with Windows sockets while WSL starts, then release them after it selects a non-overlapping pool. Run this port guard before WSL/Rancher at login. Changing Linux `sysctl` alone does not move Windows reservations. See [Microsoft's explanation](https://github.com/microsoft/WSL/issues/12228).
+
 ### 🏠 生活工具
 
 | 软件                                                       | 描述                                          |

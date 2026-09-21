@@ -63,6 +63,8 @@ Curating practical tools that mainstream buckets overlook — developer utilitie
 
 **Build warning:** Wand Enhancer intentionally publishes no prebuilt executable. Installation builds the tagged source locally, uses mise from PATH (Scoop, WinGet, or a standalone binary) to provision Node.js, pnpm, and CMake, and requires Visual Studio C++ build tools, MSBuild, and the .NET Framework 4.8 targeting pack.
 
+**MoonlightWeb / WSL:** Mirrored networking can reserve a port pool overlapping TCP `48001` and UDP `48550–48573`, causing signaling failure even after the virtual display activates successfully. Check `wsl --exec cat /proc/sys/net/ipv4/ip_local_port_range`. To keep mirrored mode, stop WSL (including its containers), hold MoonlightWeb's required ports with Windows sockets while WSL starts, then release them after it selects a non-overlapping pool. Run this port guard before WSL/Rancher at login. Changing Linux `sysctl` alone does not move Windows reservations. See [Microsoft's explanation](https://github.com/microsoft/WSL/issues/12228).
+
 ### 🏠 Life Tools
 
 | App                                                        | Description                                                        |
