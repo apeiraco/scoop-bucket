@@ -26,7 +26,8 @@ Function Set-FolderLink {
             if ($Verbose) {
                 Write-Host "[Portable Mode] Replace existing link '$JunctionDir'."
             }
-            Remove-Item -Path $JunctionDir -Force
+            # Remove only the link without prompting in Windows PowerShell 5.1.
+            [System.IO.Directory]::Delete($JunctionDir)
         } else {
             if ($Verbose) {
                 Write-Host "[Portable Mode] Move user data '$JunctionDir' -> '$TargetDir'."
@@ -69,7 +70,8 @@ Function Remove-FolderLink {
         # only remove junction to $TargetDir
         if ($linkType -eq 'Junction' -or $linkType -eq 'SymbolicLink') {
             if ((Get-Item -Path $JunctionDir).Target -eq $TargetDir) {
-                Remove-Item -Path $JunctionDir -Force
+                # Remove only the link without prompting in Windows PowerShell 5.1.
+                [System.IO.Directory]::Delete($JunctionDir)
                 if ($Verbose) {
                     Write-Host "[Portable Mode] Removed link '$JunctionDir'."
                 }

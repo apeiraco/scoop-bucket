@@ -21,6 +21,7 @@ Curating practical tools that mainstream buckets overlook — developer utilitie
 
 | App                                                       | Description                                                               |
 | --------------------------------------------------------- | ------------------------------------------------------------------------- |
+| **[DevDuo](https://github.com/aitiotekt/DevDuo)**         | Desktop WebKit viewport simulator for testing iPhone Duo layouts          |
 | **[fresh](https://github.com/sinelaw/fresh)**             | A terminal text editor you can just use                                   |
 | **[rebased](https://github.com/DetachHead/rebased)**      | An open-source remake of the short-lived jetbrains git client             |
 | **[ut](https://github.com/ksdme/ut)**                     | A fast, lightweight CLI utility toolkit                                   |
@@ -64,6 +65,17 @@ Curating practical tools that mainstream buckets overlook — developer utilitie
 **Build warning:** Wand Enhancer intentionally publishes no prebuilt executable. Installation builds the tagged source locally, uses mise from PATH (Scoop, WinGet, or a standalone binary) to provision Node.js, pnpm, and CMake, and requires Visual Studio C++ build tools, MSBuild, and the .NET Framework 4.8 targeting pack.
 
 **MoonlightWeb / WSL:** Mirrored networking can reserve a port pool overlapping TCP `48001` and UDP `48550–48573`, causing signaling failure even after the virtual display activates successfully. Check `wsl --exec cat /proc/sys/net/ipv4/ip_local_port_range`. To keep mirrored mode, stop WSL (including its containers), hold MoonlightWeb's required ports with Windows sockets while WSL starts, then release them after it selects a non-overlapping pool. Run this port guard before WSL/Rancher at login. Changing Linux `sysctl` alone does not move Windows reservations. See [Microsoft's explanation](https://github.com/microsoft/WSL/issues/12228).
+
+**MoonlightWeb / RDP**
+
+RDP uses its own remote displays, while MoonlightWeb's "Turn off the other screens during the stream" option manages console displays. Closing RDP can leave MoonlightWeb in a disconnected session, causing virtual display activation to time out. On physical PCs and VMs, reconnect through RDP as the same user, open an elevated PowerShell within that RDP session, and transfer the session to the console before streaming again.
+
+```powershell
+$sessionId = (Get-Process -Id $PID).SessionId
+tscon.exe $sessionId /dest:console
+```
+
+This immediately disconnects RDP and leaves the desktop signed in and unlocked. See [Windows console and remote display behavior](https://learn.microsoft.com/en-us/windows/win32/termserv/consoles-vs-terminals) and [Microsoft's session transfer guidance](https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/agents?view=azure-devops#interactive-vs-service).
 
 ### 🏠 Life Tools
 

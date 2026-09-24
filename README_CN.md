@@ -21,6 +21,7 @@
 
 | 软件                                                      | 描述                                                |
 | --------------------------------------------------------- | --------------------------------------------------- |
+| **[DevDuo](https://github.com/aitiotekt/DevDuo)**         | Desktop WebKit viewport simulator for testing iPhone Duo layouts          |
 | **[fresh](https://github.com/sinelaw/fresh)**             | 开箱即用的终端文本编辑器                            |
 | **[ut](https://github.com/ksdme/ut)**                     | 快速轻量的 CLI 工具集                               |
 | **[wsl-dashboard](https://github.com/owu/wsl-dashboard)** | 轻量原生图形界面，用于管理 WSL 发行版与实例（网络、USB 等） |
@@ -54,14 +55,25 @@
 | **[JHenTai](https://github.com/jiangtian616/JHenTai)**                     | E-Hentai / ExHentai 跨平台漫画阅读器                                 |
 | **[LinguaGacha](https://github.com/neavo/LinguaGacha)**                    | AI 驱动的次世代文本翻译器，支持小说、游戏、字幕内容翻译              |
 | **[LunaTranslator](https://github.com/HIllya51/LunaTranslator)**           | 强大的 Galgame 翻译工具，支持 Hook/OCR/剪贴板等多种翻译方式          |
-| **[moonlight-web](https://github.com/linckosz/moonlight-web)**              | Stream your gaming PC to any device with a browser                               |
+| **[moonlight-web](https://github.com/linckosz/moonlight-web)**              | 通过浏览器将游戏电脑串流到任意设备                                   |
 | **[MTool](https://mtool.app/)**                                            | 游戏翻译与修改工具，提供免费基础功能与付费高级功能                   |
 | **[Watt-Toolkit](https://github.com/BeyondDimension/SteamTools)**          | Steam++ 开源多功能工具箱                                             |
 | **[Wand-Enhancer](https://github.com/k1tbyte/Wand-Enhancer)**              | 本地 Wand 客户端互操作工具，安装时从源码构建                              |
 
 **构建警告：** Wand Enhancer 上游有意不发布预编译可执行文件。安装过程将在本机从对应标签的源码构建，使用 PATH 中由 Scoop、WinGet 或独立二进制方式安装的 mise 配置 Node.js、pnpm 和 CMake，并要求 Visual Studio C++ 构建工具、MSBuild 与 .NET Framework 4.8 Targeting Pack。
 
-**MoonlightWeb / WSL:** Mirrored networking can reserve a port pool overlapping TCP `48001` and UDP `48550–48573`, causing signaling failure even after the virtual display activates successfully. Check `wsl --exec cat /proc/sys/net/ipv4/ip_local_port_range`. To keep mirrored mode, stop WSL (including its containers), hold MoonlightWeb's required ports with Windows sockets while WSL starts, then release them after it selects a non-overlapping pool. Run this port guard before WSL/Rancher at login. Changing Linux `sysctl` alone does not move Windows reservations. See [Microsoft's explanation](https://github.com/microsoft/WSL/issues/12228).
+**MoonlightWeb / WSL：** 镜像网络模式会预留一段可能与 TCP `48001` 和 UDP `48550–48573` 重叠的端口池，即便虚拟显示器已成功激活，信令仍会失败。可用 `wsl --exec cat /proc/sys/net/ipv4/ip_local_port_range` 检查。若要保留镜像模式，请先停止 WSL（含其容器），在 WSL 启动期间用 Windows 套接字占用 MoonlightWeb 所需端口，待其选中一段不重叠的端口池后再释放。请在登录时、启动 WSL/Rancher 之前运行这段端口预占。仅修改 Linux 的 `sysctl` 不会改变 Windows 侧的端口预留。参见 [微软的说明](https://github.com/microsoft/WSL/issues/12228)。
+
+**MoonlightWeb / RDP**
+
+RDP 使用自己的远程显示，而 MoonlightWeb 的「串流时关闭其他屏幕」（Turn off the other screens during the stream）选项管理的是控制台显示。关闭 RDP 可能让 MoonlightWeb 留在已断开的会话中，导致虚拟显示器激活超时。在物理机和虚拟机上，请以同一用户重新通过 RDP 连接，在该 RDP 会话中打开提升权限的 PowerShell，并在再次串流前将会话转移到控制台。
+
+```powershell
+$sessionId = (Get-Process -Id $PID).SessionId
+tscon.exe $sessionId /dest:console
+```
+
+上述命令会立即断开 RDP，并让桌面保持已登录且未锁定。参见 [Windows 控制台与远程显示行为](https://learn.microsoft.com/en-us/windows/win32/termserv/consoles-vs-terminals) 与 [微软的会话转移说明](https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/agents?view=azure-devops#interactive-vs-service)。
 
 ### 🏠 生活工具
 
