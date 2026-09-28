@@ -1,5 +1,5 @@
 {
-    "version": "2025-07-07",
+    "version": "2025-09-09",
     "description": "LinkEase provides data interoperability across all platforms, allowing you to enjoy P2P high-speed experience. Back up your photos and files anytime, anywhere, and easily create your own private cloud service.",
     "homepage": "https://www.linkease.com",
     "license": {
@@ -7,7 +7,7 @@
         "url": "https://www.linkease.com/about/"
     },
     "url": "https://fw.koolcenter.com/binary/LinkEase/Client/LinkEaseSetup.exe#/dl.7z",
-    "hash": "10d4d3d334b73acf32a91a0a2b583729ecba929fad2c1323c363f74c09930b17",
+    "hash": "395002bd28ae633efd9e48cf44d8198909e2d95b42fc755b753f52ce3e9bb670",
     "installer": {
         "script": [
             "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse",
@@ -44,4 +44,3 @@
         "url": "https://fw.koolcenter.com/binary/LinkEase/Client/LinkEaseSetup.exe#/dl.7z"
     }
 }
-
