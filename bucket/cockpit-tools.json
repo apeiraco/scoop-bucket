@@ -1,5 +1,5 @@
 {
-    "version": "1.3.81",
+    "version": "1.3.82",
     "description": "Universal AI IDE account manager with multi-account switching and quota monitoring.",
     "homepage": "https://github.com/jlcodes99/cockpit-tools",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/jlcodes99/cockpit-tools/releases/download/v1.3.81/Cockpit.Tools_1.3.81_x64-setup.exe#/dl.7z",
-            "hash": "b57751edda6ab8f2f9558e87a6b3242a422de40de8c06b7a6920c8ef08795f70"
+            "url": "https://github.com/jlcodes99/cockpit-tools/releases/download/v1.3.82/Cockpit.Tools_1.3.82_x64-setup.exe#/dl.7z",
+            "hash": "9f78170a379609f479ff67deb4bd95a5eadfc519caba77811e73958172dc51eb"
         }
     },
     "bin": "cockpit-tools.exe",
